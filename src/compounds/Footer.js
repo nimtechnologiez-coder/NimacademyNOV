@@ -4,8 +4,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 /* ---- LOCAL CERTIFICATE IMAGES ---- */
-import cert1 from "../Images/hex1.png";   // MSI Certificate
-import cert2 from "../Images/hex2.png";   // Another certificate
+// import cert1 from "../Images/hex1.png";   // MSI Certificate
+// import cert2 from "../Images/hex2.png";   // Another certificate
 
 const Footer = () => {
   return (
@@ -31,8 +31,8 @@ const Footer = () => {
 
           {/* CERTIFICATE IMAGES */}
           <div className="footer-certificates">
-            <img src={cert1} alt="MSI Certificate" className="cert-img" />
-            <img src={cert2} alt="Certification Badge" className="cert-img" />
+            {/* <img src={cert1} alt="MSI Certificate" className="cert-img" />
+            <img src={cert2} alt="Certification Badge" className="cert-img" /> */}
           </div>
         </div>
 
