@@ -1,0 +1,129 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.journey-container {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 40px 20px;
+  color: #000;
+}
+
+/* Soft CTA */
+.soft-cta {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+/* Ribbon container */
+.ribbon-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+  position: relative;
+}
+
+/* Actual gradient ribbon */
+.ribbon {
+  background: linear-gradient(90deg, #a6ff61 0%, #00689c 100%);
+  padding: 35px 40px;
+  border-radius: 0px 45px 1px 0px;
+  transform: skewX(-18deg);
+}
+
+/* Inner text inside ribbon */
+.ribbon p {
+  font-size: 28px;
+  color: white;
+  font-weight: 600;
+  margin: 0;
+  transform: skewX(6deg); /* cancel skew for text */
+}
+
+/* The light green shadow base under ribbon */
+.ribbon-shadow {
+  background: #a6ff61;
+  height: 10px;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 5px;
+  transform: skewX(-6deg);
+  margin-top: -0px;
+}
+
+/* Main heading */
+.main-heading {
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 40px;
+}
+
+.green {
+  color: #4CAF1F; /* green highlight */
+}
+
+.blue {
+  color: #064873; /* deep blue highlight */
+}
+
+/* Paragraph description */
+.description {
+  font-size: 20px;
+  max-width: 900px;
+  margin: 20px auto 0 auto;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .soft-cta {
+    font-size: 18px;
+  }
+
+  .ribbon p {
+    font-size: 22px;
+  }
+
+  .main-heading {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+}

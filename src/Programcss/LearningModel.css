@@ -1,0 +1,222 @@
+/* -------------------------------------- */
+/* WRAPPER                                */
+/* -------------------------------------- */
+.learning-wrapper {
+  width: 100%;
+  padding: 50px 0;
+  position: relative;
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/* -------------------------------------- */
+/* BACKGROUND GRADIENT CIRCLES            */
+/* -------------------------------------- */
+.bg-circle {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #a4d8ff, #dbfca0);
+  box-shadow: 4px 6px 12px rgba(0,0,0,0.3);
+  opacity: 0.95;
+  z-index: -1;
+}
+
+/* 5 Circle Positions */
+.circle-a { width: 220px; height: 220px; top: 80px; left: -70px; }
+.circle-b { width: 220px; height: 220px; top: 250px; right: -80px; }
+.circle-c { width: 200px; height: 200px; bottom: 160px; left: 40px; }
+.circle-d { width: 200px; height: 200px; bottom: 40px; right: 40px; }
+.circle-e { width: 170px; height: 170px; top: 380px; left: 350px; }
+
+/* -------------------------------------- */
+/* TITLE                                  */
+/* -------------------------------------- */
+.title-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.learning-title {
+  display: inline-block;
+  padding: 14px 40px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #0E2A47;
+  background: linear-gradient(90deg, #C6FF5E, #1CA0DD);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* -------------------------------------- */
+/* MAIN LAYOUT                            */
+/* -------------------------------------- */
+.main-layout {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 140px;
+}
+
+/* LEFT CIRCLE */
+.circle-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle-box {
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #7CE17C, #1D7ABA);
+  border: 6px dotted #000;
+  color: #0E2A47;
+  font-size: 32px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+/* -------------------------------------- */
+/* CARDS                                  */
+/* -------------------------------------- */
+.cards-area {
+  width: 50%;
+}
+
+.card-box {
+  background: linear-gradient(135deg, #4AC0EA, #86E05F);
+  padding: 25px 28px;
+  border-radius: 65px;
+  margin: 26px 0;
+  display: flex;
+  align-items: center;
+  box-shadow: 5px 5px 12px rgba(0,0,0,0.25);
+}
+
+/* Stagger Effect */
+.card1 { margin-left: -50px; }
+.card2 { margin-left: 0; }
+.card3 { margin-left: 35px; }
+.card4 { margin-left: 0; }
+.card5 { margin-left: -50px; }
+
+/* Number bubble */
+.num-circle {
+  width: 100px;
+  height: 75px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #D0FFAE, #62C94F);
+  color: #0E2A47;
+  border: 4px solid #fff;
+  font-size: 26px;
+  font-weight: 800;
+  margin-right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card Text */
+.card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0E2A47;
+}
+
+.card-desc {
+  font-size: 14px;
+  color: #0E2A47;
+  width: 90%;
+  line-height: 1.4;
+}
+/* Fade Up Animation */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+/* Optional Slight Delay for stagger effect */
+.card-box:nth-child(1) { transition-delay: 0.1s; }
+.card-box:nth-child(2) { transition-delay: 0.2s; }
+.card-box:nth-child(3) { transition-delay: 0.3s; }
+.card-box:nth-child(4) { transition-delay: 0.4s; }
+.card-box:nth-child(5) { transition-delay: 0.5s; }
+
+
+/* -------------------------------------- */
+/* RESPONSIVE (TABLETS + MOBILE)          */
+/* -------------------------------------- */
+
+@media (max-width: 768px) {
+
+  .main-layout {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .cards-area {
+    width: 92%;
+  }
+
+  .circle-box {
+    width: 300px;
+    height: 300px;
+    font-size: 26px;
+  }
+
+  /* Mobile BG circles */
+  .circle-a { width: 150px; height: 150px; top: -30px; left: -20px; }
+  .circle-b { width: 150px; height: 150px; top: 180px; right: -20px; }
+  .circle-c { width: 130px; height: 130px; bottom: 100px; left: 0; }
+  .circle-d { width: 130px; height: 130px; bottom: 20px; right: 0; }
+
+  /* Hide extra for clean UI */
+  .circle-e { display: none; }
+
+  .card-box {
+    flex-direction: column;
+    border-radius: 55px;
+  }
+
+  .num-circle {
+    margin-bottom: 10px;
+  }
+
+  /* Remove stagger */
+  .card1, .card2, .card3, .card4, .card5 {
+    margin-left: 0 !important;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .circle-box {
+    width: 230px;
+    height: 230px;
+    font-size: 20px;
+  }
+
+  .num-circle {
+    width: 62px;
+    height: 62px;
+    font-size: 22px;
+  }
+
+  .card-desc {
+    font-size: 13px;
+  }
+}

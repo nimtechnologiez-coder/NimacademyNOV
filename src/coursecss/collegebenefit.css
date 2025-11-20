@@ -1,0 +1,123 @@
+/* --- WRAPPER --- */
+.benefits-wrapper {
+  padding: 40px 8%;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+/* TITLE */
+.benefits-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #005587;
+  margin-bottom: 60px;
+}
+
+.benefits-title span {
+  color: #b5f65d;
+}
+
+/* GRID LAYOUT — DEFAULT 3 PER ROW */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  width: 100%;
+}
+
+/* CARD STYLE */
+.benefit-card {
+  background: #fff;
+  padding: 45px 20px 30px;
+  border-radius: 35px;
+  min-height: 230px;
+  position: relative;
+  border: 10px solid transparent;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(to bottom right, #00a8e8, #8de95a);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* NUMBER TAG */
+.benefit-number {
+  position: absolute;
+  top: -30px;
+  left: 15%;
+  transform: translateX(-50%);
+  background: linear-gradient(to bottom, #00b0f0, #8eea57);
+  color: #fff;
+  font-size: 26px;
+  font-weight: 800;
+  padding: 15px 25px;
+  border-radius: 15px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* TEXT */
+.benefit-card p {
+  font-size: 24px;
+  line-height: 1.6;
+  font-weight: 600;
+  color: #333;
+  padding-top: 10px;
+}
+
+/* HOVER EFFECT */
+.benefit-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ================================
+   SCROLL ANIMATION (RIGHT SLIDE)
+   ================================ */
+.slide-right-hidden {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: all 0.8s ease;
+}
+
+.slide-right-show {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
+
+/* ================================
+        RESPONSIVE
+   ================================ */
+
+
+/* Mobile: 1 per row */
+@media (max-width: 600px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .benefits-title {
+    font-size: 28px;
+  }
+
+  .benefit-card {
+    min-height: 180px;
+    padding: 35px 15px;
+  }
+
+  .benefit-number {
+    font-size: 22px;
+    padding: 12px 18px;
+  }
+
+  .benefit-card p {
+    font-size: 16px;
+  }
+}
+

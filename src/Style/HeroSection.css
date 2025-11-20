@@ -1,0 +1,200 @@
+/* HERO MAIN */
+.nim-hero {
+  padding: 120px 0 150px;
+  background: linear-gradient(180deg, #B7FF5D 0%, #6BC8FF 100%);
+  position: relative;
+  overflow-x: hidden;         /* ❤️ Prevent horizontal overflow */
+  overflow-y: hidden;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  color: #072c4f;
+}
+
+/* SHAPES */
+.nim-hero-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.22;
+  pointer-events: none;
+}
+
+/* Prevent shapes from pushing layout */
+.nim-hero-shape1 {
+  width: 300px;
+  height: 300px;
+  background: #4e9bff;
+  top: -70px;
+  left: -70px;
+}
+
+.nim-hero-shape2 {
+  width: 230px;
+  height: 230px;
+  background: #7fe0ff;
+  bottom: -40px;
+  right: -40px;
+}
+
+/* BADGE */
+.nim-hero-badge {
+  display: inline-block;
+  padding: 7px 18px;
+  background: rgba(13,110,253,.15);
+  color: #0d6efd;
+  border-radius: 18px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  max-width: 100%;
+  white-space: normal;            /* ❤️ Prevent overflow */
+}
+
+/* TITLE */
+.nim-hero-title {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  word-break: break-word;        /* ❤️ Avoid overflow on small screens */
+}
+
+/* TEXT */
+.nim-hero-text {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+/* CTA BAR */
+.nim-cta-bar {
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(10px);
+  padding: 14px 24px;
+  border-radius: 40px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  max-width: 70%;
+  overflow: hidden;              /* ❤️ Prevent inside overflow */
+}
+
+.nim-cta-text {
+  font-size: 17px;
+  font-weight: 600;
+  flex: 1;
+  min-width: 0;                 /* ❤️ Fix flex overflow */
+}
+
+/* STATS */
+.nim-stat-item {
+  text-align: center;
+}
+
+.nim-stat-num {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.nim-stat-label { font-size: 14px; opacity: 0.8; }
+
+/* IMAGE */
+.nim-hero-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  animation: float 4s ease-in-out infinite;
+  object-fit: contain;          /* ❤️ No overflow */
+}
+
+/* ANIMATION */
+.nim-fade-up {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.nim-show {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* FLOAT */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+/* ====================================================== */
+/* RESPONSIVE BREAKPOINTS — ALL WIDTHS OVERFLOW SAFE      */
+/* ====================================================== */
+
+@media (max-width: 992px) {
+  .nim-hero-title { font-size: 44px; }
+  .nim-hero-img { max-width: 420px; }
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  .nim-hero { text-align: center; padding: 90px 0 120px; }
+
+  .nim-hero-title { font-size: 40px; }
+
+  .nim-cta-bar {
+    max-width: 330px;
+    margin: 20px auto;
+  }
+
+  .nim-hero-img {
+    max-width: 340px;
+    margin-top: 35px;
+  }
+}
+
+/* 576px */
+@media (max-width: 576px) {
+  .nim-hero-title { font-size: 32px; }
+  .nim-hero-text { font-size: 15px; }
+  .nim-hero-img { max-width: 280px; }
+}
+
+/* 425px */
+@media (max-width: 425px) {
+  .nim-hero-title { font-size: 28px; }
+  .nim-cta-bar { max-width: 280px; }
+  .nim-hero-img { max-width: 230px; }
+}
+
+/* 390px / 375px */
+@media (max-width: 390px) {
+  .nim-hero-title { font-size: 26px; }
+  .nim-hero-img { max-width: 250px; }
+}
+
+/* 360px */
+@media (max-width: 360px) {
+  .nim-hero-title { font-size: 24px; }
+  .nim-hero-text { font-size: 13px; }
+  .nim-cta-bar { max-width: 240px; }
+}
+
+/* 325px */
+@media (max-width: 325px) {
+  .nim-cta-bar {
+    flex-direction: column;
+    padding: 12px 16px;
+    gap: 8px;
+  }
+  .nim-hero-img { max-width: 200px; }
+}
+
+/* 320px */
+@media (max-width: 320px) {
+  .nim-hero-title { font-size: 20px; }
+  .nim-hero-text { font-size: 12px; }
+  .nim-cta-bar { max-width: 220px; }
+  .nim-hero-img { max-width: 180px; }
+}

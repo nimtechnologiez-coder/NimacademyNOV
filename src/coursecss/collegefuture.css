@@ -1,0 +1,241 @@
+/* WRAPPER */
+.future-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 60px auto;
+  position: relative;
+  overflow-x: hidden;            /* ❤️ Prevent horizontal scroll */
+}
+
+/* ================================
+   GRADIENT RIBBON (TOP BAR)
+================================ */
+.future-header {
+  width: 800px;
+  background: linear-gradient(90deg, #a6ff61 0%, #00689c 100%);
+  padding: 38px 55px;
+  border-radius: 0px 25px 0px 0px;
+  transform: skewX(-12deg);
+  margin-bottom: 6px;
+  max-width: 100%;               /* ❤️ Prevent overflow */
+  overflow: hidden;
+}
+
+.future-header p {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+  transform: skewX(12deg);
+  word-break: break-word;        /* ❤️ Safe text on small screens */
+}
+
+/* SHADOW UNDER RIBBON */
+.future-shadow {
+  background: #a6ff61;
+  height: 12px;
+  width: 89%;
+  border-radius: 4px;
+  transform: skewX(-12deg);
+  margin-top: -6px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* ================================
+   MAIN CONTENT
+================================ */
+.future-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  overflow-x: hidden;            /* ❤️ Fix flex overflow */
+}
+
+/* LEFT CONTENT */
+.future-left p {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.7;
+  color: #333;
+  margin-bottom: 25px;
+  text-align: justify;
+  word-break: break-word;        /* ❤️ Maintain UI on tiny screens */
+}
+
+/* BUTTON */
+.future-btn {
+  padding: 14px 32px;
+  background: linear-gradient(to right, #b5f65d, #50c878);
+  border: none;
+  font-size: 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  color: white;
+  font-weight: 900;
+  transition: 0.3s;
+  width: auto;
+}
+
+.future-btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+/* ICON GRID */
+.future-icons {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 50px;
+  justify-items: center;
+
+  width: 100%;
+  overflow: hidden;
+}
+
+.future-icons img {
+  width: 70px;
+  height: 70px;
+  border: 5px solid #005587;
+  border-radius: 40%;
+  padding: 12px;
+  object-fit: contain;
+}
+
+/* SLIDE RIGHT ANIMATION */
+.slide-right-hidden {
+  opacity: 0;
+  transform: translateX(120px);
+  transition: all 0.9s ease-out;
+}
+
+.slide-right-show {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+/* 1023px and below */
+@media (max-width: 1023px) {
+  .future-content {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .future-left p {
+    text-align: center;
+  }
+
+  .future-btn {
+    margin: 0 auto;
+  }
+
+  .future-icons {
+    width: 90%;
+  }
+}
+
+/* 767px */
+@media (max-width: 767px) {
+  .future-left p {
+    font-size: 20px;
+  }
+
+  .future-header {
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 0px 20px 0px 0px;
+  }
+
+  .future-header p {
+    font-size: 22px;
+  }
+
+  .future-shadow {
+    width: 95%;
+  }
+
+  .future-icons img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+/* 599px */
+@media (max-width: 599px) {
+  .future-icons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 424px */
+@media (max-width: 424px) {
+  .future-left p {
+    font-size: 18px;
+  }
+
+  .future-icons img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .future-header {
+    width: 100%;
+    padding: 25px 30px;
+  }
+
+  .future-header p {
+    font-size: 20px;
+  }
+}
+
+/* 390px */
+@media (max-width: 390px) {
+  .future-left p {
+    font-size: 17px;
+  }
+
+  .future-header p {
+    font-size: 19px;
+  }
+
+  .future-icons img {
+    width: 46px;
+    height: 46px;
+  }
+}
+
+/* 360px */
+@media (max-width: 360px) {
+  .future-left p {
+    font-size: 16px;
+  }
+
+  .future-icons img {
+    width: 42px;
+    height: 42px;
+  }
+}
+
+/* 320px */
+@media (max-width: 320px) {
+  .future-left p {
+    font-size: 15px;
+  }
+
+  .future-icons img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .future-header p {
+    font-size: 18px;
+  }
+}

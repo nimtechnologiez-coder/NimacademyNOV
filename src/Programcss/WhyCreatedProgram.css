@@ -1,0 +1,146 @@
+/* ===============================  
+    WRAPPER  
+================================ */
+.why-wrapper {
+  width: 100%;
+  padding: 70px 5%;
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* ===============================  
+    HEADING  
+================================ */
+.why-heading {
+  font-size: clamp(28px, 4vw, 46px);
+  font-weight: 800;
+  margin-bottom: 40px;
+  padding: 12px 35px;
+  display: inline-block;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #18b2e6, #9ff24e);
+  color: #fff;
+}
+
+/* ===============================  
+    CONTENT ROW  
+================================ */
+.why-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* ===============================  
+    LEFT TEXT  
+================================ */
+.why-text {
+  flex: 1 1 500px;
+}
+
+.why-text p {
+  font-size: clamp(18px, 2.2vw, 26px);
+  line-height: 1.7;
+  font-weight: 500;
+  color: #000;
+  max-width: 700px;
+}
+
+/* ===============================  
+    RIGHT CIRCLE IMAGE  
+================================ */
+.why-circle {
+  flex: 1 1 400px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+
+}
+
+
+
+.why-circle img {
+  width: 89%;
+  z-index: 2;
+}
+/* ---------------------------------- */
+/* ANIMATION CLASSES                 */
+/* ---------------------------------- */
+
+/* Fade Up */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade Right */
+.fade-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: all 0.9s ease-out;
+}
+
+.fade-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+/* ===============================  
+    RESPONSIVE FIXES  
+================================ */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .why-content {
+    gap: 40px;
+  }
+  .why-circle {
+    width: 380px;
+    height: 380px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .why-content {
+   
+    text-align: center;
+  }
+
+  .why-text p {
+    text-align: left;
+  }
+
+  .why-circle {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .why-circle {
+    width: 260px;
+    height: 260px;
+  }
+
+  .why-text p {
+    font-size: 17px;
+  }
+}

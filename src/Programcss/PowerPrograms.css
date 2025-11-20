@@ -1,0 +1,251 @@
+/* ============================================================= */
+/* MAIN WRAPPER */
+/* ============================================================= */
+.cc-wrapper {
+  width: 100%;
+  padding: 60px 6%;
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+/* ============================================================= */
+/* TOP HEADING: LEFT BARS + RIGHT TITLE */
+/* ============================================================= */
+.top-section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+  flex-wrap: wrap;
+}
+
+/* LEFT 3 BARS */
+.left-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.bar {
+  width: 420px;
+  height: 12px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #0aa3e0, #b8ff62);
+}
+
+/* RIGHT TITLE BOX */
+.title-box {
+  padding: 18px 55px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+
+  background: linear-gradient(90deg, #129de2 0%, #b8ff62 100%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+  box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+}
+
+/* ============================================================= */
+/* CARD DESIGN */
+/* ============================================================= */
+.cc-card {
+  display: flex;
+  background: #fff;
+  border: 4px solid #1ca0dd;
+  border-radius: 18px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+  overflow: hidden;
+  min-height: 260px;
+}
+
+.cc-img-box {
+  width: 40%;
+  border-right: 4px solid #1ca0dd;
+}
+
+.cc-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cc-content {
+  width: 60%;
+  padding: 20px;
+}
+
+.cc-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #000;
+}
+
+.cc-desc {
+  margin: 12px 0 16px 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #222;
+}
+
+/* ============================================================= */
+/* ENROLL BUTTON (UNDERLINE REMOVED) */
+/* ============================================================= */
+.cc-btn {
+  padding: 8px 22px;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  color: #fff;
+  display: inline-block;
+  text-decoration: none !important; /* ← underline removed */
+  background: linear-gradient(90deg, #b8ff62, #0099cc);
+  box-shadow: 3px 4px 0px #00000050;
+}
+
+/* ============================================================= */
+/* ANIMATION */
+/* ============================================================= */
+.cc-fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.7s ease-out;
+}
+
+.cc-fade-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: all 0.7s ease-out;
+}
+
+.cc-fade-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: all 0.7s ease-out;
+}
+
+.show {
+  opacity: 1 !important;
+  transform: translate(0, 0) !important;
+}
+
+/* Animated underline (optional use) */
+.underline-animate {
+  position: relative;
+}
+
+.underline-animate::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, #129de2, #b8ff62);
+  transition: width 0.3s ease;
+  border-radius: 2px;
+}
+
+.underline-animate:hover::after {
+  width: 100%;
+}
+
+/* ============================================================= */
+/* RESPONSIVE – TABLETS (max-width: 1024px) */
+/* ============================================================= */
+@media (max-width: 1024px) {
+  .title-box {
+    font-size: 28px;
+    padding: 14px 40px;
+  }
+  .bar {
+    width: 320px;
+  }
+}
+
+/* ============================================================= */
+/* RESPONSIVE – BIG MOBILES (max-width: 900px) */
+/* ============================================================= */
+@media (max-width: 900px) {
+  .top-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .title-box {
+    font-size: 26px;
+    padding: 14px 35px;
+    white-space: normal;
+  }
+
+  .bar {
+    width: 260px;
+  }
+
+  .cc-card {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .cc-img-box {
+    width: 100%;
+    height: 220px;
+    border-right: none;
+    border-bottom: 4px solid #1ca0dd;
+  }
+
+  .cc-content {
+    width: 100%;
+    padding: 18px;
+  }
+}
+
+/* ============================================================= */
+/* RESPONSIVE – SMALL MOBILES (max-width: 600px) */
+/* ============================================================= */
+@media (max-width: 600px) {
+  .title-box {
+    font-size: 22px;
+    padding: 12px 25px;
+  }
+
+  .bar {
+    width: 200px;
+  }
+
+  .cc-title {
+    font-size: 20px;
+  }
+
+  .cc-desc {
+    font-size: 14px;
+  }
+}
+
+/* ============================================================= */
+/* RESPONSIVE – EXTRA SMALL (max-width: 400px) */
+/* ============================================================= */
+@media (max-width: 400px) {
+  .title-box {
+    font-size: 20px;
+    padding: 10px 18px;
+  }
+
+  .bar {
+    width: 160px;
+  }
+
+  .cc-btn {
+    font-size: 12px;
+    padding: 6px 18px;
+  }
+}

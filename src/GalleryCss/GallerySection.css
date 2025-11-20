@@ -1,0 +1,200 @@
+/* ==========================================================
+   GLOBAL
+   ========================================================== */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.gallery-wrapper {
+  background: #ffffff;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+/* ==========================================================
+   TOP TEXT
+   ========================================================== */
+.top-text {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  max-width: 950px;
+  margin: 60px auto 30px;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+/* ==========================================================
+   HIGHLIGHT TITLE
+   ========================================================== */
+.highlight-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.highlight-title span {
+  background: linear-gradient(90deg, #1cb5e0, #000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ==========================================================
+   IMAGE GRID (4 SMALL IMAGES)
+   ========================================================== */
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  padding: 0 20px;
+}
+
+.img-card {
+  width: 260px;
+  height: 200px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #f5f5f5;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.img-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ==========================================================
+   BIG IMAGE BOX
+   ========================================================== */
+.big-img-card {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0, 255, 0, 0.5);
+}
+
+.big-img-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* ==========================================================
+   CAPTION BAR
+   ========================================================== */
+.caption-bar {
+  background: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 18px;
+  border-radius: 0 0 20px 20px;
+  margin-top: -8px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+}
+
+/* ==========================================================
+   FADE-UP ANIMATION + STAGGER
+   ========================================================== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(45px);
+  transition: all 0.85s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger Delays */
+.delay-1  { transition-delay: 0.1s; }
+.delay-2  { transition-delay: 0.2s; }
+.delay-3  { transition-delay: 0.3s; }
+.delay-4  { transition-delay: 0.4s; }
+.delay-5  { transition-delay: 0.5s; }
+.delay-6  { transition-delay: 0.6s; }
+.delay-7  { transition-delay: 0.7s; }
+.delay-8  { transition-delay: 0.8s; }
+.delay-9  { transition-delay: 0.9s; }
+.delay-10 { transition-delay: 1.0s; }
+
+/* ==========================================================
+   RESPONSIVE (ALL DEVICES)
+   ========================================================== */
+
+/* TABLETS (992px ↓) */
+@media (max-width: 992px) {
+  .img-card {
+    width: 45%;
+    height: 180px;
+  }
+
+  .top-text {
+    font-size: 18px;
+  }
+}
+
+/* MOBILE LANDSCAPE (768px ↓) */
+@media (max-width: 768px) {
+  .highlight-title {
+    font-size: 20px;
+  }
+
+  .caption-bar {
+    font-size: 18px;
+  }
+
+  .img-card {
+    width: 48%;
+    height: 170px;
+  }
+
+  .top-text {
+    font-size: 17px;
+  }
+}
+
+/* MOBILE PORTRAIT (576px ↓) */
+@media (max-width: 576px) {
+  .img-card {
+    width: 90%;
+    height: 180px;
+  }
+
+  .highlight-title {
+    font-size: 18px;
+  }
+
+  .caption-bar {
+    font-size: 16px;
+  }
+
+  .top-text {
+    font-size: 16px;
+  }
+}
+
+/* VERY SMALL DEVICES (400px ↓) */
+@media (max-width: 400px) {
+  .highlight-title {
+    font-size: 16px;
+  }
+
+  .caption-bar {
+    font-size: 15px;
+  }
+
+  .img-card {
+    width: 90%;
+    height: 160px;
+  }
+}

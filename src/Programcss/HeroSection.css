@@ -1,0 +1,262 @@
+/* ==============================
+   MAIN BG WRAPPER
+============================== */
+.program-hero-bg {
+  background: linear-gradient(180deg, #C7FF57 0%, #6AB589 50%, #2B8397 100%);
+  background-size: cover;
+  background-position: center;
+  padding: 90px 20px 150px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* CENTER LAYOUT */
+.center-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   margin-top: 50px;
+}
+
+/* TITLE */
+.program-title {
+  font-size: 72px;
+  font-weight: 900;
+  margin-bottom: 25px;
+}
+
+/* SUB HEADING */
+.program-sub {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+
+/* PARAGRAPH */
+.program-desc {
+  font-size: 24px;
+  font-weight: 600;
+  max-width: 1100px;
+  line-height: 1.6;
+  margin-bottom: 50px;
+}
+
+/* ==============================
+   CENTER MAIN IMAGE
+============================== */
+.hero-center-image-1 img {
+  width: 520px;
+  max-width: 95%;
+}
+
+/* LEFT FLOAT IMAGE */
+.hero-center-image-2-left img {
+  width: 280px;
+  position: absolute;
+  left: 25px;
+  top: 55%;
+  transform: translateY(-50%);
+}
+
+/* RIGHT FLOAT IMAGE */
+.hero-center-image-2-right img {
+  width: 280px;
+  position: absolute;
+  right: 25px;
+  top: 55%;
+  transform: translateY(-50%);
+}
+
+/* ==============================
+   BUTTONS (ALWAYS VISIBLE)
+============================== */
+.mini-btn {
+  position: absolute;
+  padding: 14px 28px;
+  background: linear-gradient(90deg, #2FA2D8, #9BFF6A);
+  border-radius: 12px;
+  font-size: 22px;
+  font-weight: 700;
+  white-space: nowrap;
+  z-index: 10;
+}
+
+/* LEFT BUTTON */
+.left-btn {
+  left: 30px;
+  bottom: 60px;
+}
+
+/* RIGHT BUTTON */
+.right-btn {
+  right: 30px;
+  bottom: 60px;
+}
+
+/* ==============================
+   TABLET (1024px)
+============================== */
+@media (max-width: 1024px) {
+  .program-title { font-size: 56px; }
+  .program-sub { font-size: 22px; }
+  .program-desc { font-size: 20px; }
+
+  .hero-center-image-2-left img,
+  .hero-center-image-2-right img {
+    width: 220px;
+  }
+
+  .mini-btn {
+    font-size: 18px;
+    padding: 10px 22px;
+  }
+}
+
+/* ==============================
+   MOBILE (768px)
+============================== */
+@media (max-width: 768px) {
+  .program-title { font-size: 44px; }
+  .program-sub { font-size: 18px; }
+  .program-desc { font-size: 17px; }
+
+  .hero-center-image-1 img {
+    width: 260px;
+  }
+
+  .hero-center-image-2-left img,
+  .hero-center-image-2-right img {
+    width: 160px;
+    opacity: 0.85;
+    top: 65%;
+  }
+
+  .mini-btn {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+
+  .left-btn { left: 10px; }
+  .right-btn { right: 10px; }
+}
+
+/* ==============================
+   SMALL MOBILE (480px)
+============================== */
+@media (max-width: 480px) {
+  .program-title { font-size: 32px; }
+  .program-sub { font-size: 15px; }
+  .program-desc { font-size: 15px; }
+
+  .hero-center-image-1 img {
+    width: 320px;
+  }
+
+  .hero-center-image-2-left img,
+  .hero-center-image-2-right img {
+    width: 110px;
+    opacity: 0.75;
+    top: 75%;
+  }
+
+  /* Buttons reposition for mobile but NOT hidden */
+  .mini-btn {
+    bottom: 20px;
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+
+/* ==============================
+   EXTRA SMALL (360px)
+============================== */
+@media (max-width: 360px) {
+  .program-title { font-size: 26px; }
+  .program-sub { font-size: 14px; }
+
+  .mini-btn {
+    font-size: 11px;
+    padding: 5px 8px;
+    bottom: 12px;
+  }
+}
+/* ================================
+   MAIN HERO BACKGROUND FIXED
+================================ */
+.program-hero-bg {
+  background: linear-gradient(180deg, #C7FF57 0%, #6AB589 50%, #2B8397 100%);
+  background-size: cover;
+  background-position: center;
+  padding: 90px 20px 150px;
+  text-align: center;
+  position: relative;
+  overflow: visible !important;   /* <--- FIX: buttons become visible */
+}
+
+/* ================================
+   MINI BUTTONS (LEFT + RIGHT)
+================================ */
+.mini-btn {
+  position: absolute;
+  padding: 14px 32px;
+  background: linear-gradient(90deg, #2FA2D8, #9BFF6A);
+  border-radius: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(-40px);
+  transition: all 0.9s ease;
+
+  z-index: 9999;    /* <--- FIX: buttons ALWAYS above images */
+}
+
+/* Left */
+.left-btn {
+  left: 40px;
+  bottom: 80px; /* moved up slightly */
+}
+
+/* Right */
+.right-btn {
+  right: 40px;
+  bottom: 80px;
+}
+
+/* SHOW ANIMATION */
+.fade-down.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================================
+   RESPONSIVE FIXES
+================================ */
+@media (max-width: 768px) {
+  .mini-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    bottom: 40px !important; 
+  }
+  .left-btn { left: 15px; }
+  .right-btn { right: 15px; }
+}
+
+/* MOBILE: Buttons MUST be visible — NOT HIDDEN */
+@media (max-width: 480px) {
+  .mini-btn {
+    font-size: 14px;
+    padding: 8px 16px;
+    bottom: 30px !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .mini-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+    bottom: 20px !important;
+  }
+}

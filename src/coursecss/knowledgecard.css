@@ -1,0 +1,189 @@
+/* WRAPPER */
+.python-wrapper {
+  padding: 50px 8%;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* FIRST ROW */
+.python-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* CARD BOX */
+.python-card {
+  width: 100%;
+  max-width: 490px;
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.python-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.python-card-body {
+  padding: 18px;
+}
+
+/* TAG */
+.python-tag {
+  background: #e8f0ff;
+  color: #0055c9;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* CARD HEADINGS */
+.python-card-body h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.python-card-body p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* BUTTON */
+.python-btn {
+  padding: 10px 22px;
+  background: linear-gradient(to right, #b5f65d, #50c878);
+  border: none;
+  border-radius: 20px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* RIGHT TEXT BLOCK */
+.python-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.python-right h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.python-right p {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 25px;
+}
+
+/* SECTION TITLE */
+.python-section-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 40px 0 35px;
+  text-align: center;
+}
+
+/* GRID */
+.python-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  width: 100%;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+/* ≤ 1200px */
+@media (max-width: 1200px) {
+  .python-row {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ≤ 1024px */
+@media (max-width: 1024px) {
+  .python-right h2 {
+    text-align: center;
+  }
+}
+
+/* ≤ 768px */
+@media (max-width: 768px) {
+  .python-wrapper {
+    padding: 40px 6%;
+  }
+
+  .python-section-title {
+    font-size: 30px;
+  }
+
+  .python-card-body p,
+  .python-right p {
+    font-size: 16px;
+  }
+}
+
+/* ≤ 600px */
+@media (max-width: 600px) {
+  .python-wrapper {
+    padding: 32px 5%;
+  }
+
+  .python-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ≤ 480px */
+@media (max-width: 480px) {
+  .python-section-title {
+    font-size: 26px;
+  }
+
+  .python-card-body h3 {
+    font-size: 17px;
+  }
+
+  .python-tag {
+    font-size: 11px;
+  }
+}
+
+/* ≤ 360px */
+@media (max-width: 360px) {
+  .python-section-title {
+    font-size: 22px;
+  }
+
+  .python-right h2 {
+    font-size: 20px;
+  }
+}

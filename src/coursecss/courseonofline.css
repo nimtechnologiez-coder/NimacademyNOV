@@ -1,0 +1,156 @@
+/* ============================
+   WRAPPER
+============================ */
+.learning-wrapper {
+  padding: 60px 8%;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+/* ============================
+   ROWS
+============================ */
+.learning-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.learning-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* ============================
+   TEXT SECTION
+============================ */
+.learning-text {
+  max-width: 480px;
+}
+
+.learning-text h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #000;
+}
+
+.learning-text p {
+  font-size: 22px;
+  line-height: 1.6;
+  text-align: justify;
+  color: #444;
+}
+
+/* ============================
+   IMAGE CARD
+============================ */
+.hex-card {
+  width: 520px;
+  padding: 20px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.hex-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 22px;
+}
+
+/* ============================================================
+   RESPONSIVE — TABLET (max-width: 1024px)
+============================================================ */
+@media (max-width: 1024px) {
+  .learning-row,
+  .learning-row.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .learning-text {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .learning-text h2 {
+    font-size: 28px;
+  }
+
+  .learning-text p {
+    font-size: 20px;
+  }
+
+  .hex-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* ============================================================
+   LARGE MOBILE (max-width: 768px)
+============================================================ */
+@media (max-width: 768px) {
+  .learning-wrapper {
+    padding: 40px 6%;
+    gap: 90px;
+  }
+
+  .learning-text h2 {
+    font-size: 26px;
+  }
+
+  .learning-text p {
+    font-size: 18px;
+  }
+
+  .hex-card {
+    width: 100%;
+  }
+}
+
+/* ============================================================
+   SMALL MOBILE (max-width: 480px)
+============================================================ */
+@media (max-width: 480px) {
+  .learning-wrapper {
+    gap: 70px;
+    padding: 40px 5%;
+  }
+
+  .learning-text h2 {
+    font-size: 22px;
+  }
+
+  .learning-text p {
+    font-size: 16px;
+  }
+
+  .hex-card {
+    width: 100%;
+  }
+
+  .hex-card img {
+    border-radius: 18px;
+  }
+}
+
+/* ============================================================
+   EXTRA SMALL (max-width: 360px)
+============================================================ */
+@media (max-width: 360px) {
+  .learning-text h2 {
+    font-size: 20px;
+  }
+
+  .learning-text p {
+    font-size: 15px;
+  }
+
+  .hex-card img {
+    border-radius: 16px;
+  }
+}

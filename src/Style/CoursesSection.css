@@ -1,0 +1,235 @@
+/*******************************
+ MAIN WRAPPER
+*******************************/
+.cs-wrapper {
+  width: 100%;
+  padding: clamp(30px, 5vw, 60px) 20px;
+  overflow-x: hidden; /* prevent horizontal scroll */
+}
+
+/*******************************
+ HEADING
+*******************************/
+.cs-header {
+  text-align: center;
+  margin-bottom: clamp(25px, 4vw, 45px);
+  overflow: hidden; /* prevent animation overflow */
+}
+
+.cs-main-heading {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 800;
+  color: #000;
+}
+
+.highlight {
+  color: #1bbad1;
+}
+
+.cs-subheading {
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  line-height: 1.6;
+  color: #333;
+  max-width: 850px;
+  margin: 15px auto 40px;
+}
+
+/*******************************
+ GRID STRUCTURE
+*******************************/
+.cs-grid {
+  max-width: 1600px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: clamp(30px, 5vw, 70px);
+  align-items: flex-start;
+  overflow: hidden; /* avoid animation overflow */
+}
+
+/*******************************
+ COLUMNS
+*******************************/
+.cs-left,
+.cs-right {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(40px, 6vw, 75px);
+}
+
+/*******************************
+ ROW (Text + Icon)
+*******************************/
+.cs-row {
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(15px, 2vw, 30px);
+  overflow: hidden; /* important for fade-left/right */
+}
+
+/*******************************
+ TEXT BLOCK
+*******************************/
+.cs-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.cs-title {
+  font-size: clamp(1.05rem, 1.7vw, 1.45rem);
+  font-weight: 700;
+  color: #000;
+  line-height: 1.35;
+}
+
+/*******************************
+ UNDERLINE
+*******************************/
+.cs-underline {
+  height: 5px;
+  width: clamp(180px, 35vw, 300px);
+  background: linear-gradient(90deg, #005b99, #008cc9, #30d890, #b8ff65);
+  border-radius: 20px;
+}
+
+/*******************************
+ ICONS
+*******************************/
+.cs-icon-box {
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  color: #111;
+  min-width: clamp(35px, 3vw, 55px);
+  display: flex;
+  align-items: center;
+}
+
+/*******************************
+ RIGHT IMAGE
+*******************************/
+.cs-image-box {
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden; /* needed for image slide animation */
+}
+
+.cs-image {
+  width: clamp(260px, 33vw, 550px);
+  max-width: 100%;
+  filter: drop-shadow(0 8px 25px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
+}
+
+/*******************************
+ IMAGE SCROLL ANIMATION
+*******************************/
+.cs-image-animate {
+  opacity: 0;
+  transform: translateX(70px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.cs-image-animate.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/*******************************
+ ANIMATIONS
+*******************************/
+
+/* Fade Up */
+.fade-up {
+  opacity: 0;
+  transform: translateY(35px);
+  transition: opacity .9s ease, transform .9s ease;
+}
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade Left */
+.fade-left {
+  opacity: 0;
+  transform: translateX(-45px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.fade-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Fade Right */
+.fade-right {
+  opacity: 0;
+  transform: translateX(45px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.fade-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Slide Right (image) */
+.fade-slide-right {
+  opacity: 0;
+  transform: translateX(70px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+.fade-slide-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/*******************************
+ MEDIA QUERIES
+*******************************/
+
+/* Tablets */
+@media (max-width: 1100px) {
+  .cs-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .cs-image-box {
+    justify-content: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .cs-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cs-text-box {
+    align-items: center;
+  }
+
+  .cs-underline {
+    width: 70%;
+  }
+
+  .cs-image {
+    width: 90%;
+  }
+}
+
+/* Very Small Mobile */
+@media (max-width: 360px) {
+  .cs-title {
+    font-size: 0.95rem;
+  }
+
+  .cs-icon-box {
+    font-size: 1.6rem;
+  }
+
+  .cs-underline {
+    width: 65%;
+  }
+}

@@ -1,0 +1,224 @@
+/* ===============================
+   OUTER WRAPPER (for spacing)
+================================ */
+.program-hero-wrapper {
+  padding: 40px 0 60px;
+  background: #ffffff;
+}
+
+/* ===============================
+   MAIN BACKGROUND WITH CURVE
+================================ */
+.program-hero-bg {
+  background: linear-gradient(180deg, #c7ff57 0%, #6ab589 50%, #2b8397 100%);
+  background-size: cover;
+  background-position: center 80%;
+  padding: 100px 6% 70px;
+  position: relative;
+  border-radius: 0 0 20px 60px; /* CURVED BOTTOM */
+  overflow: hidden; /* keeps the curve clean */
+}
+
+/* Optional: slight shadow for card feel */
+
+
+/* ===============================
+   MAIN FLEX CONTAINER
+================================ */
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1250px;
+  margin: auto;
+  gap: 40px;
+}
+
+/* ===============================
+   LEFT CONTENT
+================================ */
+.hero-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-title {
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.hero-desc {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.6;
+  max-width: 650px;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.hero-highlight {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-btn {
+  padding: 14px 38px;
+  background: linear-gradient(90deg, #2fa2d8, #9bff6a);
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.hero-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ===============================
+   RIGHT IMAGE
+================================ */
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+}
+
+.hero-img {
+  width: 480px;
+  max-width: 100%;
+  margin-left: 250px;
+ 
+  object-fit: contain;
+  transform: translateY(-20px); /* slight lift effect */
+}
+
+/* ===============================
+   BOTTOM RIBBON
+================================ */
+.bottom-ribbon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(90deg, #2fa2d8, #9bff6a);
+  padding: 18px 45px;
+  font-size: 26px;
+  font-weight: 800;
+  border-radius: 22px 0 0 0;
+  color: #ffffff;
+  z-index: 2;
+}
+
+/* ===========================================================
+   RESPONSIVE DESIGN
+=========================================================== */
+
+/* ============ TABLET (1024px) ============ */
+@media (max-width: 1024px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-left {
+    text-align: center;
+  }
+
+  .hero-desc {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-img {
+    width: 320px;
+    transform: translateY(0);
+    margin-top: 20px;
+  }
+
+  .bottom-ribbon {
+    font-size: 22px;
+    padding: 15px 35px;
+  }
+}
+
+/* ===========================================================
+   LARGE MOBILE (768px)
+=========================================================== */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 40px;
+  }
+
+  .hero-desc {
+    font-size: 18px;
+  }
+
+  .hero-highlight {
+    font-size: 22px;
+  }
+
+  .hero-img {
+    width: 260px;
+  }
+}
+
+/* ===========================================================
+   SMALL MOBILE (480px)
+=========================================================== */
+@media (max-width: 480px) {
+  .program-hero-bg {
+    padding: 70px 6% 90px;
+    border-radius: 0 0 40px 40px; /* softer curve on small screens */
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .hero-btn {
+    width: 100%;
+  }
+
+  .hero-img {
+    width: 240px;
+    margin-top: 20px;
+  }
+
+  .bottom-ribbon {
+    font-size: 18px;
+    padding: 12px 25px;
+  }
+}
+
+/* ===========================================================
+   EXTRA SMALL (360px)
+=========================================================== */
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-desc {
+    font-size: 15px;
+  }
+
+  .hero-img {
+    width: 200px;
+  }
+}
