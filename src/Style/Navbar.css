@@ -20,8 +20,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 0 35px;
-  background: rgba(255, 255, 255, 0.35); /* transparent */
-  backdrop-filter: blur(10px);            /* blur effect */
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   position: fixed;
@@ -50,7 +50,7 @@ body {
   color: #072235;
   font-weight: 500;
   font-size: 18px;
-  transition: 0.3s ease;
+  transition: .3s ease;
   cursor: pointer;
 }
 
@@ -65,7 +65,7 @@ body {
 }
 
 /* -------------------------------------------------- */
-/*      TRANSPARENT DROPDOWN MENU (Glass effect)      */
+/*      TRANSPARENT DROPDOWN MENU (Glass Effect)      */
 /* -------------------------------------------------- */
 .dropdown-menu {
   position: absolute;
@@ -73,16 +73,16 @@ body {
   left: 0;
   min-width: 180px;
   padding: 12px 0;
-  background: rgba(255, 255, 255, 0.30); /* transparent */
+  background: rgba(255, 255, 255, 0.30);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 12px;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.12);
 
   opacity: 0;
   visibility: hidden;
   transform: translateY(10px);
-  transition: 0.25s ease;
+  transition: .25s ease;
   z-index: 1200;
 }
 
@@ -91,7 +91,7 @@ body {
   padding: 10px 20px;
   color: #072235;
   font-size: 15px;
-  transition: 0.3s ease;
+  transition: .3s ease;
 }
 
 .dropdown-menu a:hover {
@@ -100,14 +100,13 @@ body {
   border-radius: 6px;
 }
 
-/* Hover triggers dropdown */
 .dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
 
-/* JS Controlled Delay Class */
+/* JS trigger class */
 .dropdown-menu.show {
   opacity: 1 !important;
   visibility: visible !important;
@@ -125,17 +124,16 @@ body {
   height: 24px;
   cursor: pointer;
 }
-
 .hamburger span {
   width: 100%;
   height: 3px;
   background: #072235;
   border-radius: 5px;
-  transition: all 0.3s;
+  transition: .3s;
 }
 
 /* -------------------------------------------------- */
-/*                  Overlay Menu                     */
+/*                   OVERLAY MENU                     */
 /* -------------------------------------------------- */
 .overlay {
   position: fixed;
@@ -145,13 +143,12 @@ body {
   -webkit-backdrop-filter: blur(10px);
 
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
 
   transform: translateY(-100%);
   opacity: 0;
-  transition: 0.45s ease;
+  transition: .45s ease;
   z-index: 1150;
 }
 
@@ -164,7 +161,8 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 22px;
+  margin-top: 80px;
 }
 
 .overlay a {
@@ -173,7 +171,7 @@ body {
   text-decoration: none;
   opacity: 0;
   transform: translateY(20px);
-  transition: all 0.35s ease;
+  transition: .35s ease;
 }
 
 .overlay.open a {
@@ -192,16 +190,58 @@ body {
   background: transparent;
   border: none;
 }
-
 .close-btn:hover {
   transform: rotate(90deg);
 }
 
 /* -------------------------------------------------- */
-/*               RESPONSIVE BREAKPOINTS               */
+/*          MOBILE PAGES DROPDOWN ACCORDION           */
+/* -------------------------------------------------- */
+.mobile-dropdown {
+  margin-top: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.mobile-dropdown-title {
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.mobile-dropdown-title:hover {
+  color: #9ccaff;
+}
+
+.mobile-dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  animation: fadeSlide .35s ease;
+}
+
+.mobile-dropdown-menu a {
+  font-size: 20px;
+  margin: 8px 0;
+}
+
+/* Animation */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* -------------------------------------------------- */
+/*                RESPONSIVE BREAKPOINTS              */
 /* -------------------------------------------------- */
 
-/* Phones 425px */
 @media (max-width: 425px) {
   .nav {
     padding: 0 16px;
@@ -212,7 +252,6 @@ body {
   }
 }
 
-/* Phones 375px */
 @media (max-width: 375px) {
   .nav {
     padding: 0 14px;
@@ -225,7 +264,6 @@ body {
   }
 }
 
-/* Smallest devices 320px */
 @media (max-width: 320px) {
   .nav {
     padding: 0 12px;
@@ -239,7 +277,7 @@ body {
   }
 }
 
-/* Hide nav links on all mobile sizes */
+/* Hide nav links on mobile */
 @media (max-width: 900px) {
   .nav-links {
     display: none;
