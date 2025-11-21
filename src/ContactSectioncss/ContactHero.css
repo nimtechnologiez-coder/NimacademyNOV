@@ -1,7 +1,7 @@
 /* HERO WRAPPER */
 .ct-hero-wrapper {
   width: 100%;
-  padding: 100px 8%;
+  padding: 120px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,45 +10,45 @@
   background-position: center;
   background-repeat: no-repeat;
 
-  border-bottom-left-ius: 170px;
+  border-bottom-left-radius: 180px;
   overflow: hidden;
   position: relative;
 }
 
-/* LEFT TEXT */
+/* LEFT SIDE */
 .ct-left {
   width: 50%;
 }
 
 .ct-title {
-  font-size: 44px;
+  font-size: 54px;
   font-weight: 800;
-  color: #000;
-  margin-bottom: 18px;
+  color: #0e2a47;
+  margin-bottom: 20px;
   font-family: "Poppins", sans-serif;
 }
 
 .ct-desc {
   width: 90%;
-  font-size: 20px;
-  line-height: 1.6;
-  color: #000;
+  font-size: 22px;
+  line-height: 1.8;
+  color: #1a1a1a;
 }
 
-/* RIGHT SIDE PERSON */
+/* RIGHT SIDE */
 .ct-right {
-  width: 47%;
+  width: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
 }
 
-/* PERSON CONTAINER */
+/* PERSON WRAPPER */
 .ct-person-wrap {
   position: relative;
-  width: 410px;
-  height: 410px;
+  width: 450px;
+  height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,44 +56,44 @@
 
 /* OUTER RING */
 .ct-ring {
-  width: 380px;
-  height: 380px;
+  width: 410px;
+  height: 410px;
   border-radius: 50%;
-  border: 12px solid #50c878;
+  border: 14px solid #50c878;
   border-left-color: transparent;
   border-top-color: transparent;
   position: absolute;
   top: 0;
   right: 0;
-  transform: rotate(12deg);
+  transform: rotate(15deg);
 }
 
 /* PERSON IMAGE */
 .ct-person-img {
-  width: 360px;
+  width: 400px;
   height: auto;
   border-radius: 50%;
   z-index: 2;
 }
 
-/* DOTTED DECORATION */
+/* DOT ELEMENT */
 .ct-dots {
   position: absolute;
   top: -20px;
-  right: 30px;
-  width: 110px;
-  height: 110px;
+  right: 40px;
+  width: 130px;
+  height: 130px;
   background-image: radial-gradient(#2a4a73 3px, transparent 3px);
-  background-size: 18px 18px;
-  opacity: 0.5;
+  background-size: 20px 20px;
+  opacity: 0.55;
 }
 
 /* RESPONSIVE */
 @media (max-width: 992px) {
   .ct-hero-wrapper {
     flex-direction: column;
-    padding: 70px 6%;
     text-align: center;
+    padding: px 6%;
   }
 
   .ct-left,
@@ -101,14 +101,22 @@
     width: 100%;
   }
 
+  .ct-title {
+    font-size: 42px;
+  }
+
+  .ct-desc {
+    font-size: 20px;
+  }
+
   .ct-person-wrap {
+    width: 340px;
+    height: 340px;
     margin-top: 40px;
-    width: 320px;
-    height: 320px;
   }
 
   .ct-person-img {
-    width: 280px;
+    width: 300px;
   }
 }
 
@@ -117,12 +125,16 @@
     font-size: 32px;
   }
 
+  .ct-desc {
+    font-size: 18px;
+  }
+
   .ct-person-wrap {
-    width: 260px;
-    height: 260px;
+    width: 270px;
+    height: 270px;
   }
 
   .ct-person-img {
-    width: 230px;
+    width: 240px;
   }
 }

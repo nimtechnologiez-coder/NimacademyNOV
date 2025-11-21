@@ -148,7 +148,7 @@ const CoursesPage = () => {
 
       {/* ========================= BUTTON ========================= */}
       <div className="cpg-view-btn-wrapper">
-        <a href="/courses" className="cpg-view-btn cpg-fade-up">
+        <a href="/course" className="cpg-view-btn cpg-fade-up">
           View All Courses
         </a>
       </div>

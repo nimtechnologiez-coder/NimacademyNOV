@@ -14,8 +14,8 @@ const ContactHero = () => {
       <div className="ct-left">
         <h1 className="ct-title">Get In Touch</h1>
         <p className="ct-desc">
-          Contact us now for questions, support, or more information — 
-          we’re always ready to help you anytime.
+          Contact us now for questions, support, or more information — we’re
+          always ready to help you anytime.
         </p>
       </div>
 
@@ -23,7 +23,7 @@ const ContactHero = () => {
       <div className="ct-right">
         <div className="ct-person-wrap">
           <div className="ct-ring"></div>
-          <img src={personImg} alt="person" className="ct-person-img" />
+          <img src={personImg} alt="contact-person" className="ct-person-img" />
           <div className="ct-dots"></div>
         </div>
       </div>

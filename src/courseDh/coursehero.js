@@ -28,8 +28,13 @@ const ProgramHeroo = () => {
             <h3 className="hero-highlight">Master the Future in Just 17 Days</h3>
 
             <div className="hero-buttons">
-              <button className="hero-btn">Show More</button>
-              <button className="hero-btn">Contact Us</button>
+  <a href="/Program" className="hero-btn">
+    Show More
+  </a>
+
+                <a href="/Contact" className="hero-btn">
+    Contact Us
+  </a>
             </div>
           </div>
 
