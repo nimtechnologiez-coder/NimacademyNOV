@@ -20,14 +20,48 @@ const Footer = () => {
             Web Development, Data Analytics, AI & More.
           </h2>
 
-          {/* SOCIAL ICONS */}
-          <div className="social-icons">
-            <i className="bi bi-twitter-x"></i>
-            <i className="bi bi-facebook"></i>
-            <i className="bi bi-linkedin"></i>
-            <i className="bi bi-instagram"></i>
-            <i className="bi bi-youtube"></i>
-          </div>
+       <div className="social-icons">
+  <a 
+    href="https://twitter.com" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <i className="bi bi-twitter-x"></i>
+  </a>
+
+  <a 
+    href="https://facebook.com" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <i className="bi bi-facebook"></i>
+  </a>
+
+  <a 
+    href="https://www.linkedin.com/company/nim-academy/posts/?feedView=all" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <i className="bi bi-linkedin"></i>
+  </a>
+
+  <a 
+    href="https://www.instagram.com/nim_academy/" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <i className="bi bi-instagram"></i>
+  </a>
+
+  <a 
+    href="https://youtube.com"
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <i className="bi bi-youtube"></i>
+  </a>
+</div>
+
 
           {/* CERTIFICATE IMAGES */}
           <div className="footer-certificates">

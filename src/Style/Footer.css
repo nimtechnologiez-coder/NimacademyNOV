@@ -161,3 +161,18 @@
     margin-bottom: 10px;
   }
 }
+.social-icons a {
+  text-decoration: none;
+}
+
+.social-icons i {
+  font-size: 30px;
+  color: #000;
+  margin-right: 18px;
+  transition: 0.3s;
+}
+
+.social-icons i:hover {
+  color: #1e8b24;
+  transform: scale(1.2);
+}

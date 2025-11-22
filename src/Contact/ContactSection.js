@@ -57,6 +57,7 @@ const ContactFollowPage = () => {
               Don’t Hesitate to Contact Us—We Are Ready to Provide Solutions!
             </p>
 
+            {/* MAP */}
             <iframe
               className="contact-map"
               title="NIM Technologies map"
@@ -65,26 +66,36 @@ const ContactFollowPage = () => {
               allowFullScreen=""
             ></iframe>
 
+            {/* CONTACT DETAILS WITH BOOTSTRAP ICONS */}
             <p className="contact-info">
-              <i className="fa-solid fa-location-dot"></i>
+              <i className="bi bi-geo-alt-fill contact-icon"></i>
               NIM Academy (A Division of NIM Technologies), Nagercoil, Tamil Nadu
             </p>
 
             <p className="contact-info">
-              <i className="fa-solid fa-phone"></i>
+              <i className="bi bi-telephone-fill contact-icon"></i>
               +91 74188 55308
             </p>
 
             <p className="contact-info">
-              <i className="fa-solid fa-envelope"></i>
+              <i className="bi bi-envelope-fill contact-icon"></i>
               info@nimtechnologies.org
             </p>
 
+            {/* SOCIAL ICONS */}
             <div className="social-icons">
-              <a href="https://instagram.com" target="_blank"><i className="fa-brands fa-instagram"></i></a>
-              <a href="https://facebook.com" target="_blank"><i className="fa-brands fa-facebook"></i></a>
-              <a href="https://youtube.com" target="_blank"><i className="fa-brands fa-youtube"></i></a>
-              <a href="https://twitter.com" target="_blank"><i className="fa-brands fa-x-twitter"></i></a>
+              <a href="https://www.instagram.com/nim_academy/" target="_blank">
+                <i className="bi bi-instagram"></i>
+              </a>
+              <a href="https://facebook.com" target="_blank">
+                <i className="bi bi-facebook"></i>
+              </a>
+              <a href="https://youtube.com" target="_blank">
+                <i className="bi bi-youtube"></i>
+              </a>
+              <a href="https://twitter.com" target="_blank">
+                <i className="bi bi-twitter-x"></i>
+              </a>
             </div>
 
           </div>
@@ -106,7 +117,6 @@ const ContactFollowPage = () => {
             <button className="connect-btn">Let’s Connect</button>
 
           </div>
-
         </div>
       </div>
 

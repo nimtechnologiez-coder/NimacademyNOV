@@ -1,4 +1,6 @@
-/* WRAPPER */
+/* ========================= */
+/*      GLOBAL WRAPPER       */
+/* ========================= */
 .nim-partnerships {
   font-family: "Poppins", sans-serif;
   background: #fff;
@@ -6,7 +8,9 @@
   padding-bottom: 60px;
 }
 
-/* TITLE */
+/* ========================= */
+/*          TITLE            */
+/* ========================= */
 .nim-title {
   font-size: 36px;
   font-weight: 800;
@@ -18,7 +22,9 @@
   color: #1e6b72;
 }
 
-/* DESCRIPTION */
+/* ========================= */
+/*       DESCRIPTION         */
+/* ========================= */
 .nim-desc {
   max-width: 900px;
   margin: 20px auto 60px;
@@ -28,7 +34,9 @@
   color: #333;
 }
 
-/* HEX CARD MAIN */
+/* ========================= */
+/*         HEX CARDS         */
+/* ========================= */
 .nim-hex-card {
   width: 290px;
   margin: auto;
@@ -48,7 +56,6 @@
   background: linear-gradient(to bottom, #0f6a7c, #9ae06e);
   transition: 0.4s ease;
 }
-
 .nim-hex-card:hover .nim-hex-img {
   transform: scale(1.05) rotate(1.5deg);
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
@@ -81,16 +88,95 @@
   line-height: 24px;
 }
 
-/* Colors */
+/* COLORS */
 .nim-hex-title.green { color: #3aa73d; }
 .nim-hex-title.blue { color: #146a87; }
 .nim-hex-title.teal { color: #1e9d7a; }
 
-/* CTA BOX */
+/* ========================= */
+/*       IMPACT SECTION      */
+/* ========================= */
+.impact-wrapper {
+  width: 100%;
+  padding: 70px 6%;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.impact-title {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 90px;
+  color: #000;
+}
+
+.impact-title span {
+  color: #1e8b24;
+}
+
+/* ROW */
+.impact-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 90px;
+  margin-bottom: 120px;
+}
+.impact-row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* IMAGE CARD */
+.impact-card {
+  width: 300px;
+  background: #fff;
+  padding: 18px;
+  border-radius: 12px;
+  border: 2px solid #0b2a4a;
+  box-shadow: 14px 14px 0px #b4ff5f;
+}
+.impact-img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* TEXT */
+.impact-text {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.num-blue {
+  font-size: 70px;
+  font-weight: 800;
+  color: #0b4c85;
+}
+
+.num-green {
+  font-size: 70px;
+  font-weight: 800;
+  color: #1e8b24;
+}
+
+.text {
+  font-size: 32px;
+  font-weight: 600;
+  white-space: nowrap;
+  color: #000;
+}
+
+/* ========================= */
+/*          CTA BOX          */
+/* ========================= */
 .nim-cta-wrapper {
   width: 900px;
   margin: 100px auto;
   position: relative;
+  margin-bottom: 150px;
 }
 
 .nim-cta-shadow {
@@ -123,18 +209,43 @@
   line-height: 1.4;
 }
 
-/* RESPONSIVE */
+/* ========================= */
+/*        RESPONSIVE         */
+/* ========================= */
+@media (max-width: 900px) {
+  .nim-cta-wrapper { width: 95%; }
+  .nim-cta-box p { font-size: 22px; }
+
+  .impact-row {
+    flex-direction: column !important;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .impact-text {
+    flex-direction: column;
+    gap: 10px;
+  }
+.nim-cta-wrapper {
+  margin: 5px;
+  
+}
+  .text {
+    white-space: normal;
+    font-size: 26px;
+    text-align: center;
+  }
+}
+
 @media (max-width: 768px) {
   .nim-hex-inner { height: 200px; }
   .nim-title { font-size: 30px; }
   .nim-desc { font-size: 16px; }
 }
-@media (max-width: 900px) {
-  .nim-cta-wrapper { width: 95%; }
-  .nim-cta-box p { font-size: 22px; }
-}
 
-/* ANIMATIONS */
+/* ========================= */
+/*        ANIMATIONS         */
+/* ========================= */
 .nim-fade-up,
 .nim-fade-right {
   opacity: 0;

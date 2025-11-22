@@ -107,6 +107,7 @@
   padding: 35px;
   border-radius: 8px;
   box-shadow: 0 0 15px rgba(0,0,0,0.12);
+  
 }
 
 .form-title {
@@ -276,6 +277,25 @@ html, body {
   min-width: 0;
   overflow-x: hidden;
 }
+.contact-icon {
+  font-size: 22px;
+  color: #1e8b24;
+  margin-right: 12px;
+}
+
+.social-icons i {
+  font-size: 30px;
+  color: #000;
+  margin-right: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icons i:hover {
+  color: #1e8b24;
+  transform: scale(1.2);
+}
+
 
 /* === FORM INPUT FIX === */
 .input-field,

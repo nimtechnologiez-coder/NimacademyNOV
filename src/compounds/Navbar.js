@@ -83,7 +83,7 @@ const Navbar = () => {
 
             <div className="dropdown-menu" ref={menuRef}>
               <a href="/college">Placement</a>
-              <a href="/Internship">Careers</a>
+              <a href="/Intership">Careers</a>
               <a href="/Blog">Blog</a>
               <a href="/Gallery">Gallery</a>
             </div>
