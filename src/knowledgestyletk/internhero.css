@@ -48,27 +48,23 @@
   z-index: 1; /* above the curve */
 }
 
-.internship-circle-bg {
-  position: absolute;
-  width: 360px;
-  height: 360px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 20% 20%, #4dd6ff 0%, #0071ff 70%);
-  top: 10px;
-  left: -100px;
-  
-  margin: 0 auto;
-}
+
 
 .internship-img {
   position: relative;
-  max-width: 340px;
-  width: 100%;
-  height: 400px;
+  max-width: 940px;
+  width: 500px;
+  height: 500px;
+
   right: 210px;
-  top: 20px;
+  top: 85px;
+
   z-index: 2;
+
+  transform: translate(15px, -25px) rotate(-5deg);
+  transition: transform 0.4s ease;
 }
+
 
 /* RIGHT SIDE – TEXT */
 .internship-right {
@@ -115,8 +111,11 @@
   position: relative;
   max-width: 340px;
   width: 100%;
+  height: 400px;
   top: 20px;
   right: 30px;
   z-index: 2;
+   transform: translate(5px, -15px) rotate(1deg);
+  transition: transform 0.4s ease;
 }
 }

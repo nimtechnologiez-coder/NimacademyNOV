@@ -1,0 +1,108 @@
+/* MAIN WRAPPER */
+.growth-banner {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  background: linear-gradient(to bottom, #b7ff5d, #6bc8ff);
+  padding: 180px 8%;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* LEFT TEXT */
+.gb-left h1 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #0c1b33;
+  margin-top: 100px;
+  line-height: 1.3;
+  max-width: 1980px;
+}
+
+/* RIGHT TEXT */
+.gb-right {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.gb-right p {
+  font-size: 32px;
+  font-weight: 700;
+  margin-left: 150px;
+  color: #00335a;
+  margin-top: 50px;
+}
+
+/* CENTER GRADUATES IMAGE */
+.gb-section {
+  position: relative;
+  width: 100%;
+  height: 500px; /* adjust as you want */
+  background: linear-gradient(180deg, #b7ff5d, #6bc8ff);
+}
+
+/* CARD */
+.gb-card {
+  width: 100%;
+  height: 260px;
+  background: #f5f5f5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  overflow: visible; /* IMPORTANT */
+}
+
+/* IMAGE WRAPPER */
+.gb-image-wrapper {
+  position: absolute;
+  bottom: 120px; /* pushes image up so hands hang outside */
+  left: 50%;
+  top: 390px;
+  transform: translateX(-100%);
+  z-index: 3;
+  overflow: visible;
+}
+
+/* IMAGE */
+.gb-image {
+  width: 750px;
+  height: 750px;
+  display: block;
+  pointer-events: none;
+   transform: translate(15px, 38px) rotate(9deg);
+  transition: transform 0.4s ease;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .growth-banner {
+    height: 560px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .gb-left h1 {
+    font-size: 28px;
+  }
+
+  .gb-right {
+    text-align: center;
+  }
+
+  .gb-image {
+    width: 420px;
+  }
+}
+
+@media (max-width: 600px) {
+  .gb-image {
+    width: 320px;
+  }
+}

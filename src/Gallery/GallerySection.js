@@ -52,7 +52,7 @@ const GallerySection = () => {
         ref={(el) => (fadeRefs.current[1] = el)}
         className={`highlight-title fade-up delay-2 ${visible.includes("1") ? "show" : ""}`}
       >
-        Explore the journey that’s <span>shaping</span> tomorrow’s tech leaders
+        Explore the journey that’s <span>shaping</span> tomorrow’s<br></br> tech leaders
         across <span>South India</span>
       </div>
 

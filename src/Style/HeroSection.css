@@ -6,13 +6,8 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   color: #000;
-  background: linear-gradient(
-    120deg,
-    #b7ff5d 0%,
-    #7df96a 25%,
-    #23caff 60%,
-    #00a1ff 100%
-  );
+  background: linear-gradient(180deg, #b7ff5d, #6bc8ff);
+
   overflow: hidden;
   height: 800px;
 }
@@ -64,13 +59,6 @@
 }
 
 /* DOTS – aligned with text block */
-.nim-hero-dots {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 230px;            /* adjust to match your text height */
-  margin-top: 15px;          /* small fine-tuning */
-}
 
 .nim-hero-dots span {
   width: 21px;

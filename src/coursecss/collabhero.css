@@ -60,8 +60,8 @@
   color: #222;
   margin-bottom: 23px;
   line-height: 1.12;
-  text-align: justify;
-  word-break: break-word;   /* ❤️ prevent title overflow */
+  white-space: nowrap;   /* forces single line */
+  text-align: left;
 }
 
 .campus-empower-desc {
@@ -70,8 +70,6 @@
   color: #000;
   font-weight: 600;
   text-align: justify;
-  margin-bottom: 90px;
-
   max-width: 527px;
   word-break: break-word;   /* ❤️ prevent long text overflow */
 }

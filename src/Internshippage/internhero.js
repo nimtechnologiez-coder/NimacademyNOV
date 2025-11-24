@@ -1,5 +1,5 @@
 import React from "react";
-import "../Internshipcss/internhero.css";
+import "../knowledgestyletk/internhero.css";
 
 import internImg from "../Internshipimage/internhero.png";
 import bgTexture from "../Internshipimage/internbg.png";

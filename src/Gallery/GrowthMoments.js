@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../GalleryCss/GrowthMoments.css";
 
-// ---- LOCAL THUMBNAILS ----
+// ---- TOP REELS ----
 import reelImg1 from "../Images/reelImg1.png";
 import reelImg2 from "../Images/reelImg2.png";
 import reelImg3 from "../Images/reelImg3.jpg";
@@ -26,11 +26,10 @@ const GrowthMoments = () => {
           }
         });
       },
-      { threshold: 0.25 }
+      { threshold: 0.2 }
     );
 
     refs.current.forEach(el => el && observer.observe(el));
-
     return () => observer.disconnect();
   }, []);
 
@@ -51,7 +50,9 @@ const GrowthMoments = () => {
         <span className="blue">moment</span> at a time.
       </h2>
 
-      {/* TOP 3 REEL CARDS */}
+      {/* ======================
+          TOP 3 REEL VIDEO CARDS
+      ====================== */}
       <div className="video-row">
 
         <a
@@ -107,7 +108,9 @@ const GrowthMoments = () => {
 
       </div>
 
-      {/* BOTTOM 3 IMAGES */}
+      {/* ======================
+          BOTTOM 3 IMAGE CARDS
+      ====================== */}
       <div className="image-row">
 
         <div
@@ -133,7 +136,7 @@ const GrowthMoments = () => {
           <div className="img-frame">
             <img src={bottom2} alt="trainer" />
           </div>
-          <div className="img-caption">Trainer presenting</div>
+          <div className="img-caption">Trainer presenting Lecture</div>
         </div>
 
         <div

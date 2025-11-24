@@ -2,11 +2,10 @@ import React from "react";
 import "../Style/HeroSection.css";
 import heroPerson from "../Images/onehero (2).png";
 
-const HeroSection = () => {
+const NimHero = () => {
   return (
     <section className="nim-hero">
       <div className="nim-hero-main">
-        {/* LEFT TEXT */}
         <div className="nim-hero-left">
           <h1>
             South India’s Most Trusted EdTech
@@ -17,7 +16,6 @@ const HeroSection = () => {
           </h1>
         </div>
 
-        {/* RIGHT TEXT + DOTS */}
         <div className="nim-hero-right">
           <div className="nim-hero-right-text">
             <p>Empowering 1L+ learners with real-world tech skills</p>
@@ -33,7 +31,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* CENTER PERSON + BLUE RIBBON */}
       <div className="nim-hero-center">
         <img src={heroPerson} alt="Student" className="nim-hero-person" />
 
@@ -43,7 +40,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* BOTTOM STEMS + CARD */}
       <div className="nim-hero-bottom">
         <div className="nim-hero-stem nim-hero-stem-left" />
         <div className="nim-hero-stem nim-hero-stem-right" />
@@ -55,4 +51,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default NimHero;

@@ -1,22 +1,29 @@
 /* ==========================================================
    GLOBAL
+<<<<<<< HEAD
 ========================================================== */
 body {
   font-family: 'Poppins', sans-serif;
 }
+=======
+   ========================================================== */
+
+>>>>>>> f7c1df3 (Add new home page, knowledge page , internship page, contactus page , gallery page)
 
 .gallery-wrapper {
   background: #ffffff;
   text-align: center;
   padding-bottom: 80px;
+ 
 }
 
 /* ==========================================================
    TOP TEXT
 ========================================================== */
 .top-text {
-  font-size: 20px;
-  font-weight: 500;
+   font-weight: 400;
+  font-size: 30px;
+  font-family: "Montserrat";
   color: #000;
   max-width: 950px;
   margin: 5px auto 30px;
@@ -28,7 +35,7 @@ body {
    HIGHLIGHT TITLE
 ========================================================== */
 .highlight-title {
-  font-size: 22px;
+  font-size: 30px;
   font-weight: 700;
   margin-bottom: 40px;
 }

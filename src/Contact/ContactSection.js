@@ -141,7 +141,7 @@ const ContactFollowPage = () => {
 
         <div className="email-box-container">
           <a
-            href="https://docs.google.com/forms/d/e/your-google-form-link"
+            href="https://forms.gle/Bsakw85w168JuPCj7"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -149,10 +149,16 @@ const ContactFollowPage = () => {
           </a>
         </div>
 
-        <div className="follow-banner">
-          Let’s turn your ideas into action — message us <br />
-          and start your learning journey today.
+      
+
+        {/* Ribbon Box */}
+      <div className="ribbonsf-wrapper">
+        <div className="ribbonsf">
+          <p> Let’s turn your ideas into action — message us <br />
+          and start your learning journey today.</p>
         </div>
+        <div className="ribbonsf-shadow"></div>
+      </div>
 
       </div>
     </>

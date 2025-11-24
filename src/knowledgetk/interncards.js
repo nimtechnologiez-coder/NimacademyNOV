@@ -1,11 +1,11 @@
 // src/components/InternshipTopCards.jsx
 import React from "react";
-import "../knowledgestyle/interncards.css";
+import "../knowledgestyletk/interncards.css";
 
 // 🔁 Change these imports to your actual image paths
-import durationImg from "../images/duration.png";
-import modeImg from "../images/durationmode.png";
-import structureImg from "../images/durationstructure.png";
+import durationImg from "../imagestk/duration.png";
+import modeImg from "../imagestk/durationmode.png";
+import structureImg from "../imagestk/durationstructure.png";
 
 const cards = [
   {

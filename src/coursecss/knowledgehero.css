@@ -1,7 +1,7 @@
 /* ====== SECTION WRAPPER (uses PNG as bg) ====== */
 .kb-hero {
   width: 100%;
-
+  
   /* background image is set inline from React */
   background-repeat: no-repeat;
   background-size: 100% auto;         /* full width, keep aspect ratio */
@@ -37,9 +37,11 @@
 }
 
 .kb-title {
-  margin: 0 250px 28px 0;
-  font-size: 2.2rem;
+  margin: 20 250px 28px 0;
+  max-width: 1900px;
+  font-size: 40px;
   font-weight: 700;
+  margin-right: 70px;
   color: #151515;
   letter-spacing: 0.2px;
   line-height: 1.15;

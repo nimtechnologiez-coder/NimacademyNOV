@@ -1,5 +1,5 @@
 import React from "react";
-import "../knowledgestyle/interntools.css";
+import "../knowledgestyletk/interntools.css";
  
 const DomainsSection = () => {
   return (

@@ -1,10 +1,11 @@
 import React from "react";
-import "../Internshipcss/internship.css";
+import "../knowledgestyletk/internship.css";
 
 const CollaborationSection = () => {
   return (
-    <div className="collab-container">
-      {/* HEADING */}
+    <section className="collab-container">
+
+      {/* MAIN HEADING */}
       <h2 className="collab-title">
         Industry <span>&</span> College Collaborations
       </h2>
@@ -17,16 +18,19 @@ const CollaborationSection = () => {
         designed next-gen applications for brands that matter.
       </p>
 
-      {/* MIDDLE GRADIENT CARD */}
-      <div className="collab-mid-box"></div>
+      {/* CENTER SMALL GRADIENT BAR */}
+      <div className="collab-mid-box">Contact</div>
 
-      {/* BOTTOM GREEN–BLUE GRADIENT BANNER */}
-      <div className="collabs-header">
-        Turn your curiosity into capability. Join the NIM Internship Program and experience
-        what it truly means to be industry-ready.
+      {/* BOTTOM SKEWED BANNER */}
+      <div className="collab-banner-wrapper">
+        <div className="collab-banner">
+          Turn your curiosity into capability. Join the NIM Internship Program and 
+          experience what it truly means to be industry-ready.
+        </div>
+        <div className="collab-banner-shadow"></div>
       </div>
-      <div className="collabs-shadow"></div>
-    </div>
+
+    </section>
   );
 };
 

@@ -11,9 +11,7 @@ import img2 from "../Courseimage/time2.png";
 import img3 from "../Courseimage/time3.png";
 
 /* Time Images (only using time1 here) */
-import time1 from "../Courseimage/time3.png";
 
-import { FaBrain, FaClock, FaBook, FaCheck } from "react-icons/fa";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -86,7 +84,7 @@ const Timeline = () => {
 
         {/* LEFT — 7 AM Doubt Clearing */}
         <div
-          className="timeline-item left"
+          className="timeline-item right"
           ref={(el) => (itemsRef.current[2] = el)}
         >
           <img src={img3} alt="session" className="session-img hover-zoom" />
@@ -105,7 +103,7 @@ const Timeline = () => {
 
         {/* RIGHT — 1 AM Hands-On Practice */}
         <div
-          className="timeline-item right"
+          className="timeline-item left"
           ref={(el) => (itemsRef.current[3] = el)}
         >
           <img src={img2} alt="session" className="session-img hover-zoom" />

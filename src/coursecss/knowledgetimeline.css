@@ -4,7 +4,6 @@
   background: #fff;
   font-family: 'Roboto', 'Arial', sans-serif;
   min-height: 100vh;
-  
 }
 
 .timeline-title {
@@ -18,8 +17,8 @@
 /* Timeline Base */
 .timeline {
   position: relative;
-  width: 85%;
-  max-width: 950px;
+  width: 88%;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 40px 0;
 }
@@ -30,32 +29,33 @@
   position: absolute;
   left: 50%;
   top: 0;
-  width: 3px;
+  width: 2px;
   height: 100%;
-  background: #222;
+  background: #000;
   transform: translateX(-50%);
   z-index: 1;
 }
 
-/* Timeline Item Base */
+/* Timeline Item */
 .timeline-item {
   display: flex;
-  justify-content: flex-start;
   align-items: flex-start;
   width: 50%;
-  margin-bottom: 70px;
   position: relative;
+  margin-bottom: 110px;
 }
 
+/* LEFT SIDE */
 .timeline-item.left {
-  flex-direction: row;
-  left: 0;
+  justify-content: flex-start;
+  padding-right: 40px;
   margin-right: 50%;
 }
 
+/* RIGHT SIDE */
 .timeline-item.right {
-  flex-direction: row-reverse;
-  right: 0;
+  justify-content: flex-end;
+  padding-left: 40px;
   margin-left: 50%;
 }
 
@@ -63,137 +63,83 @@
 .timeline-item:before {
   content: "";
   position: absolute;
-  top: 25px;
+  top: 35px;
   left: 100%;
-  width: 18px;
-  height: 18px;
-  background: #43a047;
-  border: 3px solid #fff;
+  width: 14px;
+  height: 14px;
+  background: #000;
   border-radius: 50%;
   z-index: 3;
-  box-shadow: 0 0 0 4px rgba(67,160,71,0.18);
   transform: translateX(-50%);
 }
+
 .timeline-item.right:before {
   left: 0;
-  right: 100%;
+  transform: translateX(-50%);
 }
 
-/* Session Image */
+/* SESSION IMAGE — EXACT FIX */
 .session-img {
-  width: 110px;
-  height: 85px;
-  object-fit: cover;
-  border-radius: 7px;
-  box-shadow: 0 7px 18px rgb(67,160,71,0.13);
-  margin-top: 18px;
-  margin-right: 22px;
-  margin-left: 0;
+  width: 293px;            /* EXACT same width as screenshot */
+  height: 221px;           /* Square images */
+  object-fit: cover;       /* Prevent distortion */
+  border-radius: 10px;     /* Same smooth corner */
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.18);
+  margin-right: 25px;
 }
+
 .timeline-item.right .session-img {
-  margin-left: 22px;
   margin-right: 0;
+  margin-left: 25px;
 }
 
-/* Animated Hover Effect */
-.hover-zoom {
-  transition: transform 0.3s cubic-bezier(.59,.13,.54,.93);
-}
-.hover-zoom:hover {
-  transform: scale(1.08);
-}
-
-/* Card Content */
+/* Content Card */
 .content {
   background: #fff;
-  box-shadow: 0 2px 12px 0 rgba(67,160,71,0.08);
-  padding: 26px 27px 23px 27px;
-  border-radius: 9px;
-  position: relative;
+  padding: 5px 5px;
+  border-radius: 6px;
+  max-width: 340px;
 }
 
-.card-hover {
-  transition: box-shadow 0.2s;
-}
-.card-hover:hover {
-  box-shadow: 0 6px 24px 0 rgba(67,160,71,0.22);
-}
-
-/* Time Styling */
 .time-text {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 500;
   color: #43a047;
-  margin-bottom: 6px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  letter-spacing: 1px;
-}
-.time-img-img {
-  width: 70px;
-  height: 35px;
-  object-fit: contain;
-  margin-bottom: 11px;
+  margin-bottom: 10px;
 }
 
-/* Description Styling */
+/* Description */
 .content p {
-  font-size: 1.07rem;
-  color: #222;
-  margin-top: 3px;
-  line-height: 1.54;
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.55;
+  margin-top: 5px;
 }
 
-.content b {
-  color: #222;
-  font-weight: 600;
-  font-size: 1.13rem;
-  letter-spacing: 0.3px;
-}
+/* MOBILE FIXES */
+@media (max-width: 768px) {
+  .timeline:before {
+    left: 30px;
+  }
 
-@media (max-width: 900px) {
-  .timeline {
-    width: 99%;
-    padding: 15px 0;
-  }
-  .timeline-title {
-    font-size: 1.45rem;
-    margin-bottom: 26px;
-  }
-}
-
-@media (max-width: 700px) {
-  .timeline {
-    width: 100%;
-    padding: 0;
-  }
   .timeline-item,
   .timeline-item.left,
   .timeline-item.right {
     width: 100%;
-    margin: 0 0 35px 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 55px;
     flex-direction: column;
-    left: auto;
-    right: auto;
   }
-  .timeline:before {
-    left: 23px;
-    width: 2px;
-    background: #43a047;
-    z-index: 1;
+
+  .timeline-item:before {
+    left: 27px !important;
+    top: 15px;
   }
-  .timeline-item:before,
-  .timeline-item.right:before {
-    left: 20px;
-    top: 30px;
-    background: #43a047;
-    box-shadow: none;
-  }
+
   .session-img {
-    margin: 0 0 13px 0;
-    width: 100px;
-    height: 70px;
+    width: 140px;
+    height: 140px;
+    margin: 0 0 15px 0;
   }
 }
-

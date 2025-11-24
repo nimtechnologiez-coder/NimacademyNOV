@@ -1,11 +1,11 @@
 // src/components/InternshipDetails.jsx
 import React from "react";
-import "../knowledgestyle/internpro.css";
+import "../knowledgestyletk/internpro.css";
 
 // 🔁 Update these paths & filenames to match your project structure
-import durationImg from "../images/twocategory.png";
-import modeImg from "../images/python.png";
-import structureImg from "../images/productdd.png";
+import durationImg from "../imagestk/twocategory.png";
+import modeImg from "../imagestk/python.png";
+import structureImg from "../imagestk/productdd.png";
 
 const InternshipDetails = () => {
   return (

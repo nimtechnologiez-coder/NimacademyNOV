@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "../collegestyles/collegebenefit.css";
+import "../collegestylestk/collegebenefit.css";
 
 const PartnerBenefits = () => {
   const cardRefs = useRef([]);

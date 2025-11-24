@@ -50,7 +50,7 @@ const MoUCombined = () => {
           visible.includes("1") ? "show" : ""
         }`}
       >
-        New MoUs Signed with <span>Top Institutions</span>
+         MoU Signed with <span>DMI</span> Engineering College
       </h2>
 
       <p
@@ -59,9 +59,7 @@ const MoUCombined = () => {
           visible.includes("2") ? "show" : ""
         }`}
       >
-        NIM Academy continues expanding its industry–academia partnerships.
-        Here are the latest MoU collaborations empowering students with
-        real-world, job-ready skills.
+        We are proud to announce that NIM Academy has officially signed an MoU with DMI Engineering College to strengthen industry–academia collaboration on campus. This partnership marks another milestone in our mission to empower students with real-world, job-ready skills.
       </p>
 
       <div className="row mou-row g-4">
@@ -146,14 +144,14 @@ const MoUCombined = () => {
           workshops, or internships and step into the NIM Academy journey.
         </p>
 
-        <div
-          ref={(el) => (fadeRefs.current[14] = el)}
-          className={`feature-banner fade-up delay-15 ${
-            visible.includes("14") ? "show" : ""
-          }`}
-        >
-          Together we learn, grow, and rise.
+        
+
+        <div className="ribbonss-wrapper">
+        <div className="ribbonss">
+          <p>Together we learn, grow, and rise.</p>
         </div>
+        <div className="ribbonss-shadow"></div>
+      </div>
 
       </div>
 

@@ -10,12 +10,12 @@
    GRADIENT RIBBON (TOP BAR)
    ================================ */
 .future-header {
-  width: 700px;
-  background: linear-gradient(90deg, #a6ff61 0%, #00689c 100%);
+  width: 900px;
+  background: linear-gradient(90deg, #b5f65d 0%, #005587 100%);
   padding: 38px 55px;
+  margin-top: 50px;
   border-radius: 0px 25px 0px 0px;
   transform: skewX(-12deg);
-  margin-bottom: 6px;
 }
 
 /* TEXT INSIDE – DESKEW */
@@ -24,6 +24,7 @@
   font-size: 26px;
   font-weight: 700;
   color: white;
+  text-align: center;
   transform: skewX(12deg);
 }
 
@@ -31,7 +32,7 @@
 .future-shadow {
   background: #a6ff61;
   height: 12px;
-  width: 89%;
+  width: 99%;
   border-radius: 4px;
   transform: skewX(-12deg);
   margin-top: -6px;
@@ -53,11 +54,12 @@
 }
 
 .future-left p {
-  font-size: 26px;
-  font-weight: 700;
+  font-size: 30px;
+  font-weight: 600;
   line-height: 1.7;
   color: #333;
-  margin-bottom: 25px;
+  margin-top: 80px;
+  max-width: 200px;
   text-align: justify;
 }
 
@@ -180,10 +182,22 @@
 }
 
 @media (max-width: 599px) {
-  .future-icons {
-    grid-template-columns: repeat(2, 1fr);
-    
-  }
+ .future-header {
+  width: 400px;
+  background: linear-gradient(90deg, #a6ff61 0%, #00689c 100%);
+  padding: 28px 55px;
+  border-radius: 0px 25px 0px 0px;
+  transform: skewX(-12deg);
+  margin-bottom: 6px;
+}
+.future-shadow {
+  background: #a6ff61;
+  height: 12px;
+  width: 90%;
+  border-radius: 4px;
+  transform: skewX(-12deg);
+  margin-top: -6px;
+}
 }
 
 @media (max-width: 424px) {

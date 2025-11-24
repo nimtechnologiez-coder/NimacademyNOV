@@ -52,6 +52,7 @@ import InternshipSection from "./Internshippage/internhero";
 // import InternshipDetails from "./Internshippage/internpro";
 import CollaborationSection from "./Internshippage/internship";
 import DomainsSection from "./Internshippage/interntool";
+import HeroSlider from "./compounds/heroslider";
 function App() {
   return (
     <BrowserRouter>
@@ -63,7 +64,8 @@ function App() {
           path="/"
           element={
             <>
-              <HeroSection />
+              
+              <HeroSlider/>
               <NimSections />
               <CoursesSection />
               <CoursesPage />

@@ -101,10 +101,10 @@
 .hero-img {
   width: 480px;
   max-width: 100%;
-  margin-left: 250px;
- 
+  margin-left: 265px;
+  
   object-fit: contain;
-  transform: translateY(-20px); /* slight lift effect */
+  transform: translateY(16px); /* slight lift effect */
 }
 
 /* ===============================
@@ -115,7 +115,7 @@
   bottom: 0;
   right: 0;
   background: linear-gradient(90deg, #2fa2d8, #9bff6a);
-  padding: 18px 45px;
+  padding: 18px 85px;
   font-size: 26px;
   font-weight: 800;
   border-radius: 22px 0 0 0;

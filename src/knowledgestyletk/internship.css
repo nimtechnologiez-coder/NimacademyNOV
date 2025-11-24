@@ -1,128 +1,111 @@
-/* src/components/collaboration.css */
-
-/* You can also move this @import to index.css or index.html */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 /* MAIN SECTION */
 .collab-container {
-  font-family: "Poppins", sans-serif;
   max-width: 1100px;
   margin: auto;
-  padding: 50px 20px 70px;
-  font-size: 34px;
+  padding: 60px 20px 90px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
-/* ─── SKEWED HEADER + SHADOW ───────────────────────────── */
-
-.collabs-wrapper {
-  max-width: 900px;
-  margin: 0 auto 25px;
-  
+/* MAIN HEADING */
+.collab-title {
+  font-size: 50px;
+  font-weight: 600;
+  color: #071a3d;
+  margin-bottom: 20px;
 }
 
-/* gradient bar */
-.collabs-header {
-  background: linear-gradient(90deg, #a6ff61 0%, #00689c 100%);
-  padding: 38px 40px;
-  border-radius: 0 25px 0 0;
-  transform: skewX(-12deg);
-  display: inline-block;
-  font-size: 28px;
-  font-weight: 700;
-   color: #ffffff;
+.collab-title span {
+  color: #8fea54;
 }
 
-/* unskew the text so it looks straight */
-.collabs-header-content {
-  transform: skewX(12deg);
-  font-size: 36px;
-  font-weight: 700;
-  color: #ffffff;
-  white-space: nowrap;
-}
-
-/* small green shadow bar under the header */
-.collabs-shadow {
-  background: #a6ff61;
-  height: 10px;
-  width: 98%;
-  border-radius: 0 0 6px 6px;
-  transform: skewX(-12deg);
-  margin-top: -1px;
-}
-
-/* ─── BODY TEXT & OTHER ELEMENTS ───────────────────────── */
-
+/* DESCRIPTION */
 .collab-description {
   font-size: 24px;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
+  color: #333;
+  line-height: 1.7;
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 70px;
+}
+
+/* CENTER GRADIENT BAR */
+.collab-mid-box {
+  width: 240px;
+  height: 52px;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(90deg, #92f065, #004aad);
+  border-radius: 18px;
+  margin: 30px auto 90px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* ========== SKEWED BANNER ========== */
+.collab-banner-wrapper {
+  width: 100%;
   max-width: 900px;
-  line-height: 1.8;
-  color: #444;
-  margin: 20px auto 0;
+  margin: auto;
+  position: relative;
+}
+
+/* MAIN GRADIENT BANNER */
+.collab-banner {
+  background: linear-gradient(90deg, #a6ff61 0%, #0068a0 100%);
+  padding: 40px 50px;
+  border-radius: 0 45px 0 0;
+  transform: skewX(-12deg);
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  line-height: 1.6;
   text-align: center;
 }
 
-/* Middle Gradient Box */
-.collab-mid-box {
-  width: 200px;
-  height: 45px;
-  background: linear-gradient(135deg, #7cf37d, #004aad);
-  border-radius: 18px;
-  margin: 45px auto;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+/* SHADOW BAR */
+.collab-banner-shadow {
+  background: #a6ff61;
+  height: 14px;
+  width: 95%;
+  border-radius: 0 0 10px 10px;
+  transform: skewX(-12deg);
+  margin: 0 auto;
 }
 
-/* Bottom Banner */
-.collab-bottom-banner {
-  margin-top: 60px;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  background: linear-gradient(135deg, #7cf37d, #004aad);
-  padding: 30px 40px;
-  border-radius: 22px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.18);
-  color: #ffffff;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.6;
-  text-align: left;
-}
+/* RESPONSIVE */
+@media (max-width: 850px) {
+  .collab-title {
+    font-size: 36px;
+  }
 
-/* ─── RESPONSIVE ───────────────────────────────────────── */
-
-@media (max-width: 900px) {
-  .collabs-header {
-    padding: 14px 24px;
+  .collab-banner {
+    font-size: 22px;
+    padding: 28px;
     transform: skewX(-8deg);
   }
 
-  .collabs-header-content {
-    transform: skewX(8deg);
-    font-size: 20px;
-    white-space: normal;
+  .collab-banner-shadow {
+    transform: skewX(-8deg);
   }
-  .collab-container {
-  font-family: "Poppins", sans-serif;
-  max-width: 1100px;
-  margin: auto;
-  padding: 50px 20px 70px;
-  font-size: 24px;
 }
 
-  .collabs-shadow {
-    width: 70%;
+@media (max-width: 650px) {
+  .collab-banner {
+    border-radius: 18px;
+    transform: none;
   }
-  
-}
 
-@media (max-width: 700px) {
-  .collab-bottom-banner {
-    text-align: center;
-    font-size: 18px;
-    padding: 25px;
+  .collab-banner-shadow {
+    display: none;
   }
-  
+
+  .collab-mid-box {
+    width: 180px;
+    height: 42px;
+  }
 }

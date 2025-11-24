@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import "../collegestyles/collegefuture.css";
+import "../collegestylestk/collegefuture.css";
 
 import phone from "../images/phone.png";
 import mail from "../images/email.png";

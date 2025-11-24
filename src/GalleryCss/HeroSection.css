@@ -21,7 +21,9 @@
 /* HEADING */
 .hero-text {
   position: absolute;
-  top: 170px;
+  top: 270px;
+  font-size: 56px;
+  font-weight: 600;
   left: 55px;
   z-index: 3;
 }

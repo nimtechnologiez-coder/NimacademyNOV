@@ -1,12 +1,12 @@
 import React, { useEffect, useRef } from "react";
-import "../coursecss/collegefuture.css";
+import "../collegestylestk/collegefuture.css";
 
-import phone from "../Courseimage/phone.png";
-import mail from "../Courseimage/email.png";
-import chat from "../Courseimage/chat.png";
-import globe from "../Courseimage/globe.png";
-import at from "../Courseimage/instagram.png";
-import location from "../Courseimage/location.png";
+import phone from "../imagestk/phone.png";
+import mail from "../imagestk/email.png";
+import chat from "../imagestk/chat.png";
+import globe from "../imagestk/globe.png";
+import at from "../imagestk/instagram.png";
+import location from "../imagestk/location.png";
 
 const FutureTogether = () => {
   const iconRef = useRef(null);
@@ -67,6 +67,3 @@ const FutureTogether = () => {
 };
 
 export default FutureTogether;
-
-
-

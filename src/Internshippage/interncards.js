@@ -1,10 +1,13 @@
 import React from "react";
-import "../Internshipcss/interncards.css";
+import "../knowledgestyletk/interncards.css";
 
-// 🔁 Change these imports to your actual image paths
-import durationImg from "../Internshipimage/duration.png";
-import modeImg from "../Internshipimage/durationmode.png";
-import structureImg from "../Internshipimage/durationstructure.png";
+import durationImg from "../imagestk/duration.png";
+import modeImg from "../imagestk/durationmode.png";
+import structureImg from "../imagestk/durationstructure.png";
+import gain1 from "../imagestk/gain1.png";
+import gain2 from "../imagestk/gain2.png";
+import gain3 from "../imagestk/gain3.png";
+import gain4 from "../imagestk/gain4.png";
 
 const cards = [
   {
@@ -31,10 +34,11 @@ const cards = [
 const InternshipTopCards = () => {
   return (
     <section className="three-cards-section">
-      <div className="three-cards-wrapper">
+
+      {/* TOP CARDS */}
+      <div className="info-cards-row">
         {cards.map((card, index) => (
           <div className="info-card" key={index}>
-            {/* Circle image with colored arcs */}
             <div className="card-circle-wrap">
               <div className="card-circle-ring">
                 <div className="card-circle-img">
@@ -43,8 +47,8 @@ const InternshipTopCards = () => {
               </div>
             </div>
 
-            {/* Text content */}
             <h3 className="info-card-title">{card.title}</h3>
+
             <p className="info-card-text">
               {card.lines.map((line, i) => (
                 <React.Fragment key={i}>
@@ -56,43 +60,52 @@ const InternshipTopCards = () => {
           </div>
         ))}
       </div>
+
+      {/* SECTION TITLE */}
       <h2 className="section-title">What You’ll Gain</h2>
 
       <p className="section-description">
         Discover the skills, confidence, and real-world experience you need to
-        stand out in your career. Through expert guidance, hands-on projects,
-        and practical learning, you’ll gain industry-ready knowledge and the
-        mindset to grow, adapt, and succeed in any professional environment.
+        stand out in your career. Through expert guidance, hands-on projects, and
+        practical learning, you’ll gain industry-ready knowledge and the mindset
+        to grow, adapt, and succeed.
       </p>
 
-      {/* 4 GAIN CARDS */}
+      {/* GAIN CARDS WITH IMAGES */}
       <div className="gain-grid">
+        
         <div className="gain-card">
-          <div className="gain-icon">📊</div>
+          <div className="gain-img">
+            <img src={gain1} alt="Real-World Project Exposure" />
+          </div>
           <p>Real-World Project Exposure Across Domains</p>
         </div>
 
         <div className="gain-card">
-          <div className="gain-icon">🎓</div>
+          <div className="gain-img">
+            <img src={gain2} alt="Internship Certification" />
+          </div>
           <p>Internship Certification Recognized By Top Colleges And Industry Partners</p>
         </div>
 
         <div className="gain-card">
-          <div className="gain-icon">💼</div>
+          <div className="gain-img">
+            <img src={gain3} alt="Placement Network" />
+          </div>
           <p>Access To NIM Placement Network For Future Job Opportunities</p>
         </div>
 
         <div className="gain-card">
-          <div className="gain-icon">🚀</div>
-          <p>Mentorship From Industry Experts &amp; Company Professionals</p>
+          <div className="gain-img">
+            <img src={gain4} alt="Mentorship from Experts" />
+          </div>
+          <p>Mentorship From Industry Experts & Company Professionals</p>
         </div>
+
       </div>
-    
+
     </section>
   );
 };
 
 export default InternshipTopCards;
-
-
-

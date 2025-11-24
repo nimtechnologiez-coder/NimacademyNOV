@@ -194,17 +194,43 @@
   border: none;
 }
 
-.follow-banner {
-  max-width: 900px;
-  margin: 40px auto;
-  background: linear-gradient(90deg, #B9F55A, #31B49A, #005A9B);
-  padding: 30px;
-  border-radius: 0 50px 0 0;
-  font-size: clamp(15px, 2.5vw, 18px);
-  font-weight: 600;
-  color: white;
-  text-align: center;
+/* Ribbon container */
+.ribbonsf-wrapper {
+  width: 90%;
+  max-width: 2900px;
+  margin: 0 auto 60px auto;
+  position: relative;
+  margin-top: 100px;
 }
+
+/* Actual gradient ribbon */
+.ribbonsf {
+  background: linear-gradient(90deg, #a6ff61 0%, #00689c 100%);
+  padding: 15px 200px;
+  border-radius: 0px 45px 1px 0px;
+  transform: skewX(-18deg);
+}
+
+/* Inner text inside ribbon */
+.ribbonsf p {
+  font-size: 28px;
+  color: white;
+  font-weight: 700;
+  margin: 0;
+  transform: skewX(6deg); /* cancel skew for text */
+}
+
+/* The light green shadow base under ribbon */
+.ribbonsf-shadow {
+  background: #a6ff61;
+  height: 10px;
+  width: 96%;
+  margin: 0 auto;
+  border-radius: 5px;
+  transform: skewX(-6deg);
+  margin-top: -0px;
+}
+
 
 /* ANIMATIONS */
 .reveal {
@@ -348,6 +374,44 @@ html, body {
   .form-title {
     text-align: center;
   }
+  
+/* Ribbon container */
+.ribbonsf-wrapper {
+  margin: 0 auto 60px auto;
+  position: relative;
+  margin-top: 100px;
+}
+
+/* Actual gradient ribbon */
+.ribbonsf {
+  background: linear-gradient(90deg, #a6ff61 0%, #00689c 100%);
+  border-radius: 0px 45px 1px 0px;
+  text-align: center;
+    font-size: 18px;
+    padding: 25px;
+  transform: skewX(-18deg);
+}
+
+/* Inner text inside ribbon */
+.ribbonsf p {
+  font-size: 14px;
+  color: white;
+  width: -700px;
+  font-weight: 700;
+  margin: 0;
+  transform: skewX(6deg); /* cancel skew for text */
+}
+
+/* The light green shadow base under ribbon */
+.ribbonsf-shadow {
+  background: #a6ff61;
+  height: 10px;
+  width: 270px;
+  margin: 0 auto;
+  border-radius: 5px;
+  transform: skewX(-6deg);
+  margin-top: -0px;
+}
 
   .social-icons {
     text-align: center;

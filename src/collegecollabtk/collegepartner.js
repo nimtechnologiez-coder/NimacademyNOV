@@ -1,9 +1,9 @@
 import React from "react";
-import "../collegestyles/collegepartner.css";
-import img1 from "../images/col1.png";
-import img2 from "../images/col2.png";
-import img3 from "../images/col3.png";
-import img4 from "../images/col4.png";
+import "../collegestylestk/collegepartner.css";
+import img1 from "../imagestk/col1.png";
+import img2 from "../imagestk/col2.png";
+import img3 from "../imagestk/col3.png";
+import img4 from "../imagestk/col4.png";
 
 const PartnerSection = () => {
   return (

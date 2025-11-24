@@ -1,6 +1,6 @@
 // src/components/CollaborationSection.jsx
 import React from "react";
-import "../knowledgestyle/internship.css";
+import "../knowledgestyletk/internship.css";
 
 const CollaborationSection = () => {
   return (

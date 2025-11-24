@@ -1,6 +1,6 @@
 // src/components/InternshipDomains.jsx
 import React from "react";
-import "../knowledgestyle/intern.css";
+import "../knowledgestyletk/intern.css";
 
 const InternshipDomains = () => {
   return (

@@ -112,7 +112,7 @@ text-align: justify;
 /* Actual gradient ribbon */
 .ribbons {
   background: linear-gradient(90deg, #a6ff61 0%, #00689c 100%);
-  padding: 35px 40px;
+  padding: 45px 250px;
   border-radius: 0px 45px 1px 0px;
   transform: skewX(-18deg);
 }
@@ -121,7 +121,7 @@ text-align: justify;
 .ribbons p {
   font-size: 28px;
   color: white;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0;
   transform: skewX(6deg); /* cancel skew for text */
 }
@@ -181,11 +181,12 @@ text-align: justify;
   }
 
   .ribbons-wrapper {
-    font-size: 1.07rem;
+    font-size: 10px;
     padding: 14px 0;
     margin-top: 21px;
-    width: 90vw;
-    max-width: 98vw;
+    right: 250px;
+    width: 1000px;
+    max-width: 800px;
     border-radius: 8px;
     
   }
@@ -193,7 +194,7 @@ text-align: justify;
   .ribbons-shadow {
     background: #a6ff61;
     height: 10px;
-    width: 87%;
+    width: 100%;
     margin: 0 auto;
     border-radius: 5px;
     transform: skewX(-6deg);
