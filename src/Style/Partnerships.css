@@ -173,7 +173,7 @@
 /*          CTA BOX          */
 /* ========================= */
 .nim-cta-wrapper {
-  width: 900px;
+  width: 1101px;
   margin: 100px auto;
   position: relative;
   margin-bottom: 150px;
@@ -213,7 +213,7 @@
 /*        RESPONSIVE         */
 /* ========================= */
 @media (max-width: 900px) {
-  .nim-cta-wrapper { width: 95%; }
+  .nim-cta-wrapper { width: 96%; }
   .nim-cta-box p { font-size: 22px; }
 
   .impact-row {
@@ -270,4 +270,78 @@
   opacity: 1;
   visibility: visible;
   transform: translateX(0);
+}
+/* ========================= */
+/*      MOBILE 425px AND BELOW VIEW    */
+/* ========================= */
+@media (max-width: 425px) {
+
+  /* IMPACT NUMBERS: stay in one line */
+  .impact-text {
+    flex-direction: row;       /* number + + + text in one line */
+    justify-content: center;
+    align-items: center;
+    gap: 4px;                  /* small gap */
+    flex-wrap: wrap;           /* wrap if necessary */
+    text-align: center;
+  }
+
+  .num-blue,
+  .num-green {
+    font-size: 25px;           /* smaller for mobile */
+    font-weight: 700;
+    line-height: 1;            /* reduce line spacing */
+  }
+
+  .text {
+    font-size: 16px;           /* smaller text for mobile */
+    white-space: normal;
+  }
+
+  /* Adjust impact cards */
+  .impact-card {
+    width: 95%;
+    padding: 12px;
+  }
+
+  .impact-img {
+    height: 160px;             /* smaller for mobile */
+  }
+
+  /* HEX CARDS */
+  .nim-hex-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .nim-hex-inner {
+    height: 150px;
+  }
+  .nim-hex-title {
+    font-size: 16px;
+  }
+  .nim-hex-desc {
+    font-size: 14px;
+  }
+
+  /* TITLE & DESCRIPTION */
+  .nim-title {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+  .nim-desc {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  /* CTA BOX */
+  .nim-cta-wrapper {
+    width: 95%;
+    margin: 2px auto 50px;
+  }
+  .nim-cta-box {
+    padding: 20px 15px;
+  }
+  .nim-cta-box p {
+    font-size: 16px;
+  }
 }

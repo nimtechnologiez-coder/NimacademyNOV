@@ -12,21 +12,39 @@
 .ii-blue-highlight { color: #1e73be; font-weight: 600; }
 .ii-green-highlight { color: #a8d867; font-weight: 600; }
 
-/* HEADINGS */
+/* HEADINGS (UPDATED SPACING) */
 .ii-wrapper h1 {
-  font-size: 38px;
+  font-size: 42px;
   font-weight: 800;
-  margin-top: 30px;
+  margin-top: 40px;
+  margin-bottom: 28px;   /* Added */
 }
+
 .ii-wrapper h2 {
   font-size: 26px;
   font-weight: 600;
+  margin-bottom: 28px;   /* Added */
 }
+
 .ii-desc {
   max-width: 900px;
-  margin: 10px auto 40px;
+  margin: 0 auto 50px;   /* Increased bottom gap */
   font-size: 17px;
   line-height: 1.7;
+  color: #444;
+}
+
+/* Section title spacing */
+.ii-section-title {
+  margin-top: 70px !important; /* More space before second section */
+  margin-bottom: 23px !important;
+}
+
+.ii-subtitle {
+  max-width: 800px;
+  margin: 0 auto 50px;   /* Better gap before industry cards */
+  font-size: 17px;
+  line-height: 1.6;
   color: #444;
 }
 
@@ -38,9 +56,7 @@
   visibility: hidden;
 }
 
-.ii-fade-up {
-  transform: translateY(40px);
-}
+.ii-fade-up { transform: translateY(40px); }
 .ii-fade-up.ii-show {
   opacity: 1;
   visibility: visible;
@@ -48,9 +64,7 @@
   transition: 1s ease;
 }
 
-.ii-fade-right {
-  transform: translateX(70px);
-}
+.ii-fade-right { transform: translateX(70px); }
 .ii-fade-right.ii-show {
   opacity: 1;
   visibility: visible;
@@ -74,12 +88,10 @@
   justify-content: center;
   gap: 60px;
   flex-wrap: wrap;
-  margin-bottom: 60px;
+  margin-bottom: 70px;   /* Slightly increased */
 }
 
-.ii-circle-box {
-  width: 240px;
-}
+.ii-circle-box { width: 240px; }
 
 .ii-circle {
   width: 150px;
@@ -90,7 +102,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  margin: 0 auto 20px;   /* Added space below circle */
   animation: ii-rotate 13s linear infinite;
 }
 
@@ -110,6 +122,7 @@
   gap: 40px;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 70px;   /* Added spacing below section */
 }
 
 .ii-industry-card {
@@ -126,9 +139,7 @@
   transform: translateY(-10px);
 }
 
-.ii-middle {
-  margin-top: 30px;
-}
+.ii-middle { margin-top: 55px; }
 
 .ii-industry-icon {
   font-size: 60px;
@@ -138,10 +149,14 @@
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
+  .ii-wrapper h1 { margin-top: 30px; }
+  .ii-desc { margin-bottom: 35px; }
+
   .ii-industry-card {
     width: 220px;
     height: auto;
   }
+
   .ii-circle { width: 130px; height: 130px; }
   .ii-circle-icon { font-size: 40px; }
 }

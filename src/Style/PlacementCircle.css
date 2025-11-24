@@ -20,7 +20,7 @@
 .place-title {
   font-size: clamp(26px, 4vw, 42px);
   font-weight: 700;
-  margin-bottom: 8px;
+  margin-bottom: 25px;
   color: #003a5c;
 }
 
@@ -31,7 +31,7 @@
 .place-subheading {
   font-size: clamp(16px, 2.5vw, 24px);
   font-weight: 500;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .place-description {
@@ -126,7 +126,7 @@
 }
 
 .cc-titlee {
-  font-size: clamp(26px, 4vw, 42px);
+  font-size: clamp(30px, 4vw, 45px);
   font-weight: 700;
   color: #003a5c;
   margin-bottom: 35px;

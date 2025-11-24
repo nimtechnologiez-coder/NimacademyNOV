@@ -1,6 +1,6 @@
 /* ==========================================================
    GLOBAL
-   ========================================================== */
+========================================================== */
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -13,20 +13,20 @@ body {
 
 /* ==========================================================
    TOP TEXT
-   ========================================================== */
+========================================================== */
 .top-text {
   font-size: 20px;
   font-weight: 500;
   color: #000;
   max-width: 950px;
-  margin: 60px auto 30px;
+  margin: 5px auto 30px;
   line-height: 1.6;
   padding: 0 20px;
 }
 
 /* ==========================================================
    HIGHLIGHT TITLE
-   ========================================================== */
+========================================================== */
 .highlight-title {
   font-size: 22px;
   font-weight: 700;
@@ -40,8 +40,8 @@ body {
 }
 
 /* ==========================================================
-   IMAGE GRID (4 SMALL IMAGES)
-   ========================================================== */
+   IMAGE GRID (SMALL IMAGES)
+========================================================== */
 .image-row {
   display: flex;
   justify-content: center;
@@ -73,7 +73,7 @@ body {
 
 /* ==========================================================
    BIG IMAGE BOX
-   ========================================================== */
+========================================================== */
 .big-img-card {
   width: 90%;
   max-width: 1100px;
@@ -90,7 +90,7 @@ body {
 
 /* ==========================================================
    CAPTION BAR
-   ========================================================== */
+========================================================== */
 .caption-bar {
   background: #fff;
   font-size: 20px;
@@ -103,7 +103,7 @@ body {
 
 /* ==========================================================
    FADE-UP ANIMATION + STAGGER
-   ========================================================== */
+========================================================== */
 .fade-up {
   opacity: 0;
   transform: translateY(45px);
@@ -129,7 +129,7 @@ body {
 
 /* ==========================================================
    RESPONSIVE (ALL DEVICES)
-   ========================================================== */
+========================================================== */
 
 /* TABLETS (992px ↓) */
 @media (max-width: 992px) {
@@ -137,7 +137,6 @@ body {
     width: 45%;
     height: 180px;
   }
-
   .top-text {
     font-size: 18px;
   }
@@ -148,16 +147,13 @@ body {
   .highlight-title {
     font-size: 20px;
   }
-
   .caption-bar {
     font-size: 18px;
   }
-
   .img-card {
     width: 48%;
     height: 170px;
   }
-
   .top-text {
     font-size: 17px;
   }
@@ -169,15 +165,12 @@ body {
     width: 90%;
     height: 180px;
   }
-
   .highlight-title {
     font-size: 18px;
   }
-
   .caption-bar {
     font-size: 16px;
   }
-
   .top-text {
     font-size: 16px;
   }
@@ -188,13 +181,77 @@ body {
   .highlight-title {
     font-size: 16px;
   }
-
   .caption-bar {
     font-size: 15px;
   }
-
   .img-card {
     width: 90%;
     height: 160px;
+  }
+}
+
+/* EXTRA SMALL PHONES: 320px */
+@media (max-width: 320px) {
+  .highlight-title {
+    font-size: 14px;
+  }
+  .caption-bar {
+    font-size: 14px;
+    padding: 12px;
+  }
+  .img-card {
+    width: 95%;
+    height: 150px;
+  }
+  .top-text {
+    font-size: 14px;
+  }
+  .image-row {
+    gap: 10px;
+    padding: 0 10px;
+  }
+}
+
+/* SMALL PHONES: 375px */
+@media (max-width: 375px) {
+  .highlight-title {
+    font-size: 15px;
+  }
+  .caption-bar {
+    font-size: 15px;
+    padding: 13px;
+  }
+  .img-card {
+    width: 92%;
+    height: 155px;
+  }
+  .top-text {
+    font-size: 15px;
+  }
+  .image-row {
+    gap: 12px;
+    padding: 0 12px;
+  }
+}
+
+/* MEDIUM PHONES: 425px */
+@media (max-width: 425px) {
+  .highlight-title {
+    font-size: 16px;
+  }
+  .caption-bar {
+    font-size: 16px;
+    padding: 14px;
+  }
+  .img-card {
+    width: 90%;
+    height: 160px;
+  }
+  .top-text {
+    font-size: 16px;
+  }
+  .image-row {
+    gap: 15px;
+    padding: 0 15px;
   }
 }

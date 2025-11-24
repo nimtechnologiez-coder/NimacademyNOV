@@ -45,10 +45,12 @@
 /* BLUE LINE */
 .pc-blue-line {
   width: 100%;
-  height: 6px;
+  height: 10px;
   background: #0A5C84;
   margin-top: -6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);  /* shadow added */
 }
+
 
 /* =========================================================
    CIRCLE SECTION
