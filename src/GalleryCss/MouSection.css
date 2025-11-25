@@ -1,233 +1,199 @@
 body {
-
   font-family: "Poppins", sans-serif;
-
   background: #ffffff;
-
   margin: 0;
-
   padding: 0;
-
 }
- 
+
 /* ============================
-
-   RIBBON 
-
+   MAIN WRAPPER
 ============================ */
-
-.ribbonss-wrapper {
-
+.mou-full-container {
   width: 100%;
-
-  max-width: 1200px;
-
-  margin: 45px auto 0;
-
+  margin: 0 auto;
   color: #000;
-
 }
- 
+
+/* ============================
+   RIBBON
+============================ */
+.ribbonss-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 100px auto 60px;
+  padding: 0 16px;
+}
+
 .ribbonss {
-
   background: linear-gradient(90deg, #a6ff61 0%, #00689c 100%);
-
   padding: clamp(18px, 4vw, 35px) clamp(40px, 12vw, 250px);
-
   border-radius: 0 45px 1px 0;
-
   transform: skewX(-12deg);
-
 }
- 
-.ribbonss-bottom {
 
-  background: #a6ff61;
-
-  height: 10px;
-
-  width: 96%;
-
-  margin: -2px auto 0;
-
-  border-radius: 5px;
-
-  transform: skewX(-8deg);
-
-}
- 
-/* ============================
-
-   SECTION 1 — MoU BENEFITS
-
-============================ */
-
-.mou-benefits {
-
-  width: min(88%, 1200px);
-
-  margin: 60px auto;
-
-  text-align: center;
-
-}
- 
-.benefits-title {
-
-  font-size: clamp(24px, 4vw, 42px);
-
-  font-weight: 800;
-
-  line-height: 1.4;
-
-}
- 
-.benefits-bottom-text {
-
-  font-size: clamp(26px, 5vw, 48px);
-
-  text-align: center;
-
-  margin-top: 61px;
-
-  line-height: 1.5;
-
-}
- 
-/* ============================
-
-   FEATURE SECTION
-
-============================ */
-
-.feature-section {
-
-  text-align: center;
-
-  margin-top: 25px;
-
-}
- 
-.feature-banner {
-
-  width: min(90%, 900px);
-
-  margin: 0 auto 60px;
-
-  background: linear-gradient(90deg, #b7fb58, #3dae91, #005f96);
-
-  padding: clamp(16px, 3vw, 28px);
-
-  border-radius: 54px 20px 55px 20px;
-
-  color: #fff;
-
-  font-size: clamp(18px, 3vw, 28px);
-
+.ribbonss p {
+  font-size: clamp(18px, 3vw, 30px);
   font-weight: 700;
-
-  box-shadow: 0 6px 0 #78cf3f;
-
+  margin: 0;
+  color: #fff;
+  transform: skewX(12deg);
 }
- 
+
+.ribbonss-shadow {
+  background: #a6ff61;
+  height: 10px;
+  width: 96%;
+  margin: -2px auto 0;
+  border-radius: 5px;
+  transform: skewX(-8deg);
+}
+
 /* ============================
-
-   CARDS
-
+   SECTION 1 — BENEFITS
 ============================ */
-
-.main-title {
-
-  font-size: clamp(24px, 4vw, 36px);
-
-  font-weight: 800;
-
-  text-align: center;
-
-}
- 
-.sub-title span {
-
-  color: #0057a8;
-
-}
- 
-.desc-text {
-
-  width: min(90%, 900px);
-
-  margin: 10px auto 30px;
-
-  text-align: center;
-
-  font-size: clamp(16px, 3vw, 20px);
-
+.mou-benefits {
+  width: min(88%, 1200px);
+  margin: 60px auto;
   line-height: 1.6;
-
 }
- 
-/* ============================
 
+.benefits-title {
+  font-size: clamp(28px, 5vw, 48px);
+  font-weight: 500;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.benefits-list p {
+  font-size: clamp(16px, 3vw, 25px);
+  margin-bottom: 22px;
+}
+
+.benefits-bottom-text {
+  font-size: clamp(26px, 5vw, 48px);
+  text-align: center;
+  margin-top: 61px;
+  line-height: 1.5;
+}
+
+/* ============================
+   SECTION 2 — FEATURE SECTION
+============================ */
+.feature-section {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.feature-title {
+  font-size: clamp(22px, 4vw, 32px);
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.feature-subtext {
+  font-size: clamp(16px, 3vw, 32px);
+  width: min(90%, 850px);
+  margin: 0 auto 45px;
+  color: #373737;
+  line-height: 1.6;
+}
+
+.feature-banner {
+  width: min(90%, 900px);
+  margin: 0 auto 60px;
+  background: linear-gradient(90deg, #b7fb58, #3dae91, #005f96);
+  padding: clamp(16px, 3vw, 28px);
+  border-radius: 55px 20px 55px 20px;
+  color: #fff;
+  font-size: clamp(18px, 3vw, 28px);
+  font-weight: 700;
+  box-shadow: 0 6px 0 #78cf3f;
+}
+
+/* ============================
+   SECTION 3 — MOU CARDS
+============================ */
+.main-title {
+  font-size: clamp(24px, 4vw, 36px);
+  font-weight: 800;
+  margin-top: 40px;
+  text-align: center;
+}
+.main-title span {
+  color: #65c13a;
+}
+
+.sub-title {
+  font-size: clamp(20px, 3.5vw, 32px);
+  font-weight: 700;
+  text-align: center;
+}
+.sub-title span {
+  color: #0057a8;
+}
+
+.desc-text {
+  font-size: clamp(14px, 2.5vw, 18px);
+  line-height: 1.7;
+  width: min(92%, 900px);
+  margin: 25px auto 30px;
+  color: #2d2d2d;
+  text-align: center;
+}
+
+.mou-row {
+  width: min(92%, 1300px);
+  margin: 40px auto 70px;
+}
+
+.mou-wrapper {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: clamp(20px, 4vw, 35px);
+  margin-bottom: 40px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.mou-image {
+  width: 100%;
+  height: clamp(180px, 40vw, 350px);
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* ============================
    CARD HOVER
-
 ============================ */
-
 .hover-card {
-
   transition: transform 0.35s ease, box-shadow 0.35s ease;
-
 }
- 
+
 .hover-card:hover {
-
-  transform: translateY(-12px);
-
+  transform: translateY(-10px);
   box-shadow: 0 12px 45px rgba(164, 255, 104, 0.55);
-
 }
- 
+
 /* ============================
-
    ANIMATIONS
-
 ============================ */
-
 .fade-up {
-
   opacity: 0;
-
   transform: translateY(30px);
-
-  transition: all 0.7s ease-out;
-
+  transition: all 0.9s ease-out;
 }
- 
+
 .show {
-
   opacity: 1;
-
   transform: translateY(0);
-
 }
- 
+
 .delay-1 { transition-delay: 0.1s; }
-
 .delay-2 { transition-delay: 0.2s; }
-
 .delay-3 { transition-delay: 0.3s; }
-
 .delay-4 { transition-delay: 0.4s; }
-
 .delay-5 { transition-delay: 0.5s; }
-
 .delay-6 { transition-delay: 0.6s; }
-
 .delay-7 { transition-delay: 0.7s; }
-
 .delay-8 { transition-delay: 0.8s; }
-
 .delay-9 { transition-delay: 0.9s; }
-
 .delay-10 { transition-delay: 1s; }
-
- 
